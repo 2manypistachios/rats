@@ -4,7 +4,7 @@
   "version": "1.1.0",
   "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
   "dependencies": {
-    "bulma-start": "0.0.2",
+    "bulma": "^0.7.1",
     "gatsby": "next",
     "gatsby-image": "next",
     "gatsby-plugin-catch-links": "next",
