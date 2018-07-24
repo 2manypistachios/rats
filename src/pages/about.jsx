@@ -8,10 +8,8 @@ class AboutPage extends Component {
   render() {
     return (
       <Layout location={this.props.location}>
-        <section className="section about">
           <Helmet title={`About | ${config.siteTitle}`} />
           <About />
-        </section>
       </Layout>
     );
   }
