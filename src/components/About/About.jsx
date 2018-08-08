@@ -6,7 +6,7 @@ class About extends Component {
     return (
       <div className="container about">
         <h1 class="title">
-          Edit About component or pages/about.jsx to include your information.
+          About Page
         </h1>
         <p class="subtitle">Wow man.</p>
       </div>
