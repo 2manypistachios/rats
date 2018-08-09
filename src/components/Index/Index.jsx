@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Column, Columns, Level, LevelItem, Image, Notification } from "bloomer";
+import { Container, Column, Columns, Level, LevelItem, Image } from "bloomer";
 import "./Index.css";
 
 class Index extends Component {

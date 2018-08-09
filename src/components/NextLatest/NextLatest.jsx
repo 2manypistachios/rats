@@ -6,7 +6,6 @@ const _ = require("lodash");
 class NextLatest extends React.Component {
   getPostList() {
     const postList = [];
-    console.log(this.props.postEdges);
     if (this.props.postEdges) {
       postList.push({
         path:  this.props.postEdges[0].node.fields.slug,
