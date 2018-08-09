@@ -1,1 +1,38 @@
+.image-background {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5) ),
+        url(https://unsplash.it/1200/900?random) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
+.img-responsive {
+    display: block; 
+    max-width: 100%;
+    height: auto;
+ }
+
+ .has-image-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 769px) {
+    .ordered-mobile {
+      display: -webkit-flex; /* Safari */
+      display: flex;
+      -webkit-flex-flow: row;
+      flex-flow: row;
+    }
+    .ordered-mobile .fl-1 {
+      order: 1;
+    }
+    .ordered-mobile .fl-2 {
+      order: 1;
+    }
+    .ordered-mobile .fl-3 {
+      order: 2;
+  }
+}

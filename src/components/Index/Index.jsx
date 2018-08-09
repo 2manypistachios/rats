@@ -1,17 +1,22 @@
 import React, { Component } from "react";
+import { Container, Column, Columns, Level, LevelItem, Image, Notification } from "bloomer";
 import "./Index.css";
 
 class Index extends Component {
   render() {
     return (
-      <div class="container about">
-        <h1 class="title">
-          Hero title
-        </h1>
-        <h2 class="subtitle">
-          Hero subtitle
-        </h2>
-      </div>
+      <Container className="index">
+        <Columns>
+          <Column isSize={{tablet: 4}} isOffset={{tablet: 4}}>
+              <Image className='has-image-centered' src='/assets/glitchLogo.png'/>
+          </Column>
+        </Columns>
+        <Level>
+          <LevelItem>
+            <Image className='has-image-centered' src='/assets/glitchComic.gif'/>
+          </LevelItem>
+        </Level>
+      </Container>
     );
   }
 }

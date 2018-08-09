@@ -6,8 +6,9 @@
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "bloomer": "^0.6.3",
     "bulma": "^0.7.1",
-    "gatsby": "next",
+    "gatsby": "^2.0.0-beta.87",
     "gatsby-image": "next",
     "gatsby-plugin-catch-links": "next",
     "gatsby-plugin-feed": "next",
