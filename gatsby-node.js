@@ -53,6 +53,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === "MarkdownRemark") {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
+    console.log("ParsedFilePath:", parsedFilePath);
     if (
       Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
@@ -100,7 +101,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     const postPage = path.resolve("src/templates/post.jsx");
     const tagPage = path.resolve("src/templates/tag.jsx");
-    const categoryPage = path.resolve("src/templates/category.jsx");
+    //const categoryPage = path.resolve("src/templates/category.jsx");
     resolve(
       graphql(
         `
@@ -110,10 +111,9 @@ exports.createPages = ({ graphql, actions }) => {
                 node {
                   frontmatter {
                     tags
-                    category
                   }
                   fields {
-                    slug
+                    title
                   }
                 }
               }
@@ -144,7 +144,7 @@ exports.createPages = ({ graphql, actions }) => {
             path: edge.node.fields.slug,
             component: postPage,
             context: {
-              slug: edge.node.fields.slug
+              slug: edge.node.fields.title
             }
           });
         });
@@ -160,7 +160,7 @@ exports.createPages = ({ graphql, actions }) => {
           });
         });
 
-        const categoryList = Array.from(categorySet);
+        /*const categoryList = Array.from(categorySet);
         categoryList.forEach(category => {
           createPage({
             path: `/categories/${_.kebabCase(category)}/`,
@@ -169,7 +169,7 @@ exports.createPages = ({ graphql, actions }) => {
               category
             }
           });
-        });
+        });*/
       })
     );
   });

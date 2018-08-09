@@ -6,10 +6,11 @@ import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import Index from "../components/Index/Index";
 import Navigation from "../components/Navigation/Navigation";
+import NextLatest from "../components/NextLatest/NextLatest";
 import config from "../../data/SiteConfig";
 
 import { Section, Container, Columns, Column, Hero, HeroBody, Level, LevelItem, Title, Subtitle } from "bloomer";
-import { Card, CardImage, CardContent, Image, Notification, Button, Footer, Content, Icon } from "bloomer";
+import { Card, CardImage, CardContent, Image, Button, Footer, Content, Icon } from "bloomer";
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 
 class IndexPage extends React.Component {
@@ -23,17 +24,7 @@ class IndexPage extends React.Component {
         <Hero isSize='is-medium' isColor='black' isBold className='index-section'>
           <HeroBody hasTextAlign='centered'>       
             <Index />
-            <Container className='index-comic'>
-              <Level isMobile>
-                <LevelItem>
-                  <Button isColor='danger' isOutlined>First</Button>
-                </LevelItem>
-                <LevelItem>
-                  <Button isColor='success' isOutlined>Last</Button>
-                </LevelItem>
-                </Level>
-              <PostListing postEdges={postEdges} />
-            </Container>
+            <NextLatest postEdges={postEdges} />
           </HeroBody>
         </Hero>
         <Section isMarginless>
@@ -113,12 +104,9 @@ export const pageQuery = graphql`
             slug
             date
           }
-          excerpt
-          timeToRead
           frontmatter {
             title
             tags
-            cover
             date
           }
         }
