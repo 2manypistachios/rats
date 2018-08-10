@@ -3,7 +3,13 @@ const urljoin = require("url-join");
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-});
+})
+if (!process.env.Tumblr_Key) {
+  throw new Error("Process.Env.Tumbler_Key is undefined.")
+}
+if (!process.env.Tumblr_Secret) {
+  throw new Error("Process.Env.Tumbler_Key is undefined.")
+}
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -73,13 +79,13 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",
-    /*{
+    {
       resolve: `gatsby-source-tumblr`,
       options: {
-        blogIdentifier: process.env.TUMBLR_KEY,
-        consumerKey: process.env.TUMBLR_SECRET,
+        blogIdentifier: "greentype.tumblr.com",
+        consumerKey: process.env.Tumblr_Key,
       }
-    },*/
+    },
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
