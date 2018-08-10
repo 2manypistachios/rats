@@ -136,9 +136,9 @@ exports.createPages = ({ graphql, actions }) => {
             });
           }
 
-          if (edge.node.frontmatter.category) {
+          /*if (edge.node.frontmatter.category) {
             categorySet.add(edge.node.frontmatter.category);
-          }
+          }*/
 
           createPage({
             path: edge.node.fields.slug,
