@@ -82,7 +82,7 @@ module.exports = {
     {
       resolve: `gatsby-source-tumblr`,
       options: {
-        blogIdentifier: "greentype.tumblr.com",
+        blogIdentifier: "tots-official.tumblr.com",
         consumerKey: process.env.Tumblr_Key,
       }
     },
