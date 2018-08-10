@@ -108,13 +108,14 @@ export const pageQuery = graphql`
         }
       }
     }
-    allTumblrPost(limit: 3, sort: {fields: [date], order: DESC}) {
+    allTumblrPost(limit: 10, sort: {fields: [date], order: DESC}) {
       edges {
         node {
           date
           title
           body
           id
+          tags
         }
       }
     }
