@@ -1,20 +1,20 @@
 import React, { Component } from "react";
 import {
+  TumblrShareButton,
   FacebookShareButton,
   GooglePlusShareButton,
-  LinkedinShareButton,
   TwitterShareButton,
-  TelegramShareButton,
   RedditShareButton,
+  
+  TumblrShareCount,
   FacebookShareCount,
   GooglePlusShareCount,
-  LinkedinShareCount,
   RedditShareCount,
+  
+  TumblrIcon,
   FacebookIcon,
   TwitterIcon,
-  TelegramIcon,
   GooglePlusIcon,
-  LinkedinIcon,
   RedditIcon
 } from "react-share";
 import urljoin from "url-join";
@@ -34,40 +34,37 @@ class SocialLinks extends Component {
 
     return (
       <div className="social-links">
+        <TumblrShareButton url={url} title={post.title}>
+          <TumblrIcon round size={iconSize} />
+          <TumblrShareCount url={url}>
+            {count => renderShareCount(count)}
+          </TumblrShareCount>
+        </TumblrShareButton>
+
         <RedditShareButton url={url} title={post.title}>
           <RedditIcon round size={iconSize} />
           <RedditShareCount url={url}>
             {count => renderShareCount(count)}
           </RedditShareCount>
         </RedditShareButton>
+        
         <TwitterShareButton url={url} title={post.title}>
           <TwitterIcon round size={iconSize} />
         </TwitterShareButton>
+        
         <GooglePlusShareButton url={url}>
           <GooglePlusIcon round size={iconSize} />
           <GooglePlusShareCount url={url}>
             {count => renderShareCount(count)}
           </GooglePlusShareCount>
         </GooglePlusShareButton>
+        
         <FacebookShareButton url={url} quote={postNode.excerpt}>
           <FacebookIcon round size={iconSize} />
           <FacebookShareCount url={url}>
             {count => renderShareCount(count)}
           </FacebookShareCount>
         </FacebookShareButton>
-        <LinkedinShareButton
-          url={url}
-          title={post.title}
-          description={postNode.excerpt}
-        >
-          <LinkedinIcon round size={iconSize} />
-          <LinkedinShareCount url={url}>
-            {count => renderShareCount(count)}
-          </LinkedinShareCount>
-        </LinkedinShareButton>
-        <TelegramShareButton url={url}>
-          <TelegramIcon round size={iconSize} />
-        </TelegramShareButton>
       </div>
     );
   }

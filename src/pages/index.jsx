@@ -7,6 +7,7 @@ import SEO from "../components/SEO/SEO";
 import Index from "../components/Index/Index";
 import Navigation from "../components/Navigation/Navigation";
 import NextLatest from "../components/NextLatest/NextLatest";
+import UserInfo from "../components/UserInfo/UserInfo";
 import config from "../../data/SiteConfig";
 
 import { Section, Container, Columns, Column, Hero, HeroBody, Level, LevelItem, Title, Subtitle } from "bloomer";
@@ -44,7 +45,8 @@ class IndexPage extends React.Component {
             <Column issize={{mobile: 12, tablet:6}} className='center-mobile fl-3'>
               <Card>
                 <CardContent>
-                  <Title>Excuse 1.7</Title>
+                  <UserInfo config={config} />
+                  <Title>News</Title>
                   <Subtitle>Hello, this is going to be my excuse about why I haven't made comics forever lol xddddd.</Subtitle>
                   <p>Yeah, I just dont give a shit anymore.</p>
                 </CardContent>

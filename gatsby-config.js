@@ -1,6 +1,10 @@
 const config = require("./data/SiteConfig");
 const urljoin = require("url-join");
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
@@ -69,6 +73,13 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",
+    /*{
+      resolve: `gatsby-source-tumblr`,
+      options: {
+        blogIdentifier: process.env.TUMBLR_KEY,
+        consumerKey: process.env.TUMBLR_SECRET,
+      }
+    },*/
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",

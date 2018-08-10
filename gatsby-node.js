@@ -113,7 +113,7 @@ exports.createPages = ({ graphql, actions }) => {
                     tags
                   }
                   fields {
-                    title
+                    slug
                   }
                 }
               }
@@ -144,7 +144,7 @@ exports.createPages = ({ graphql, actions }) => {
             path: edge.node.fields.slug,
             component: postPage,
             context: {
-              slug: edge.node.fields.title
+              slug: edge.node.fields.slug
             }
           });
         });
