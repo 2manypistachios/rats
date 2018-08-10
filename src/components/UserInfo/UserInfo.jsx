@@ -6,7 +6,7 @@ class UserInfo extends Component {
   render() {
     const { tumblrUrl, twitterUrl, discordUrl } = this.props.config;
     return (
-      <Level>
+      <Level isMobile>
         <LevelItem>
           <a className="button is-info" href={tumblrUrl}>
             <span className="icon">

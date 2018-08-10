@@ -7,7 +7,7 @@ import SEO from "../components/SEO/SEO";
 import Index from "../components/Index/Index";
 import Navigation from "../components/Navigation/Navigation";
 import NextLatest from "../components/NextLatest/NextLatest";
-import UserInfo from "../components/UserInfo/UserInfo";
+import TumblrBlog from "../components/TumblrBlog/TumblrBlog";
 import config from "../../data/SiteConfig";
 
 import { Section, Container, Columns, Column, Hero, HeroBody, Level, LevelItem, Title, Subtitle } from "bloomer";
@@ -17,6 +17,7 @@ import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 class IndexPage extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
+    const tumblrEdges = this.props.data.allTumblrPost.edges;
     return (
       <Layout location={this.props.location}>
         <Helmet title={config.siteTitle} />
@@ -30,7 +31,7 @@ class IndexPage extends React.Component {
         </Hero>
         <Section isMarginless>
           <Columns isMobile isMultiline className='ordered-mobile'>
-            <Column isSize={{mobile:6, default:3}} className='center-mobile fl-1'>
+            <Column isSize={{mobile:6, tablet:3}} className='center-mobile fl-1'>
               <Card>
                 <CardImage>
                   <Image src='https://bulma.io/images/placeholders/128x128.png'/>
@@ -42,17 +43,10 @@ class IndexPage extends React.Component {
                 </CardImage>
               </Card>
             </Column>
-            <Column issize={{mobile: 12, tablet:6}} className='center-mobile fl-3'>
-              <Card>
-                <CardContent>
-                  <UserInfo config={config} />
-                  <Title>News</Title>
-                  <Subtitle>Hello, this is going to be my excuse about why I haven't made comics forever lol xddddd.</Subtitle>
-                  <p>Yeah, I just dont give a shit anymore.</p>
-                </CardContent>
-              </Card>
+            <Column isSize={{mobile: 12, tablet:6}} className='center-mobile fl-3'>
+              <TumblrBlog postEdges={tumblrEdges}/>
             </Column>
-            <Column isSize={{mobile:6, default:3}} className='center-mobile fl-2'>
+            <Column isSize={{mobile:6, tablet:3}} className='center-mobile fl-2'>
               <Card>
                 <CardImage>
                   <Image src='https://bulma.io/images/placeholders/128x128.png'/>
@@ -111,6 +105,16 @@ export const pageQuery = graphql`
             tags
             date
           }
+        }
+      }
+    }
+    allTumblrPost(limit: 3, sort: {fields: [date], order: DESC}) {
+      edges {
+        node {
+          date
+          title
+          body
+          id
         }
       }
     }
