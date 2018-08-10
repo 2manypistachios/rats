@@ -13,6 +13,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "comic"}
+      - {label: "Slug", name: "slug", widget: "hidden", default: "{{slug}}"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Page", name: "page", widget: "number", valueType: "int", min: "1", max: "99999"}
       - {label: "Cover", name: "cover", widget: "image"}
