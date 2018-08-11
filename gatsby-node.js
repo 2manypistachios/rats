@@ -53,7 +53,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === "MarkdownRemark") {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
-    console.log("ParsedFilePath:", parsedFilePath);
     if (
       Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
@@ -111,6 +110,9 @@ exports.createPages = ({ graphql, actions }) => {
                 node {
                   frontmatter {
                     tags
+                    templateKey
+                    page
+                    title
                   }
                   fields {
                     slug
@@ -140,13 +142,26 @@ exports.createPages = ({ graphql, actions }) => {
             categorySet.add(edge.node.frontmatter.category);
           }*/
 
-          createPage({
-            path: edge.node.fields.slug,
-            component: postPage,
-            context: {
-              slug: edge.node.fields.slug
-            }
-          });
+          if (edge.node.frontmatter.templateKey == "comic") {
+            console.log("edge", edge);
+            let page = edge.node.frontmatter.page
+            let number_path = Array(4-String(page).length+1).join('0')+page //Transforms 1 to 0001
+            createPage({
+              path: number_path,
+              component: postPage,
+              context: {
+                slug: number_path
+              }
+            });
+          } else {
+            createPage({
+              path: edge.node.fields.slug,
+              component: postPage,
+              context: {
+                slug: edge.node.fields.slug
+              }
+            });
+          }
         });
 
         const tagList = Array.from(tagSet);

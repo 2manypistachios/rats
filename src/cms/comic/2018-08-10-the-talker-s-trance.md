@@ -1,7 +1,6 @@
 ---
 templateKey: comic
-slug: '{{slug}}'
-title: The Talker's Trance
+title: The Talker's Trance yolo
 page: 2
 cover: /images/glitchLogo.png
 date: 10/08/2018
