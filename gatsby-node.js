@@ -142,7 +142,7 @@ exports.createPages = ({ graphql, actions }) => {
             categorySet.add(edge.node.frontmatter.category);
           }*/
 
-          if (edge.node.frontmatter.templateKey == "comic") {
+          if (edge.node.frontmatter.templateKey == "comic_winga") { //remove Winga to use Page Numbers as Reference
             console.log("edge", edge);
             let page = edge.node.frontmatter.page
             let number_path = Array(4-String(page).length+1).join('0')+page //Transforms 1 to 0001
