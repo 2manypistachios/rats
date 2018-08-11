@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import Layout from "../layout";
 import Cast from "../components/Cast/Cast";
+import Navigation from "../components/Navigation/Navigation";
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import config from "../../data/SiteConfig";
 
@@ -13,6 +14,7 @@ class CastPage extends Component {
       <Layout location={this.props.location}>
           <Helmet title={`Cast | ${config.siteTitle}`} />
           <ErrorBoundary>
+            <Navigation/>
             <Cast postEdges={postEdges}/>
           </ErrorBoundary>
       </Layout>

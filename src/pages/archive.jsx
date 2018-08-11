@@ -3,10 +3,9 @@ import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import Layout from "../layout";
 import Archive from "../components/Archive/Archive";
+import Navigation from "../components/Navigation/Navigation";
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import config from "../../data/SiteConfig";
-
-import { Title } from "bloomer";
 
 class ArchivePage extends Component {
   render() {
@@ -15,6 +14,7 @@ class ArchivePage extends Component {
       <Layout location={this.props.location}>
         <Helmet title={`Archive | ${config.siteTitle}`} />
         <ErrorBoundary>
+          <Navigation/>
           <Archive postEdges={postEdges}/>
         </ErrorBoundary>
       </Layout>

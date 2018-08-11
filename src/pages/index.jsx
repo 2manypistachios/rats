@@ -26,6 +26,7 @@ class IndexPage extends React.Component {
         <Helmet title={config.siteTitle} />
         <SEO />
         <ErrorBoundary>
+        <Navigation />
         <Hero isSize='is-medium' isColor='black' isBold className='index-section'>
           <HeroBody hasTextAlign='centered'>       
             <Index />

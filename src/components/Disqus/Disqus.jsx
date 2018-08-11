@@ -33,7 +33,6 @@ class Disqus extends Component {
       config.pathPrefix,
       postNode.fields.slug
     );
-    console.log(post.title, url);
     return (
       <ReactDisqusComments
         shortname={config.disqusShortname}
