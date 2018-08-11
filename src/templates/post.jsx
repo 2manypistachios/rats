@@ -35,11 +35,11 @@ export default class PostTemplate extends React.Component {
               <Content dangerouslySetInnerHTML={{ __html: postNode.html }} />
             </Column>
           </Columns>
+          <NextPrevious postNode={postNode}/>
           <div className="post-meta">
             <PostTags tags={post.tags} />
             <SocialLinks postPath={slug} postNode={postNode} />
           </div>
-          <NextPrevious postNode={postNode}/>
           <Disqus postNode={postNode} />
         </Container>
       </Layout>
