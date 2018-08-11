@@ -165,32 +165,19 @@ exports.createPages = ({ graphql, actions }) => {
             categorySet.add(edge.node.frontmatter.category);
           }*/
 
-          if (edge.node.frontmatter.templateKey == "comic_winga") { //remove Winga to use Page Numbers as Reference
-            console.log("edge", edge);
-            let page = edge.node.frontmatter.page
-            let number_path = Array(4-String(page).length+1).join('0')+page //Transforms 1 to 0001
-            createPage({
-              path: number_path,
-              component: postPage,
-              context: {
-                slug: number_path
-              }
-            });
-          } else {
-            createPage({
-              path: edge.node.fields.slug,
-              component: postPage,
-              context: {
-                slug: edge.node.fields.slug
-              }
-            });
-          }
+          createPage({
+            path: edge.node.fields.slug,
+            component: postPage,
+            context: {
+              slug: edge.node.fields.slug
+            }
+          });
         });
 
         const tagList = Array.from(tagSet);
         tagList.forEach(tag => {
           createPage({
-            path: `/tags/${_.kebabCase(tag)}/`,
+            path: `/archive/${_.kebabCase(tag)}/`,
             component: tagPage,
             context: {
               tag

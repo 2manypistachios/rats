@@ -2,42 +2,37 @@ import React, { Component } from "react";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import Layout from "../layout";
-import Credits from "../components/Credits/Credits";
+import Archive from "../components/Archive/Archive";
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import config from "../../data/SiteConfig";
 
-class CreditsPage extends Component {
+class ArchivePage extends Component {
   render() {
     let postEdges = this.props.data;
     return (
       <Layout location={this.props.location}>
-        <Helmet title={`Credits | ${config.siteTitle}`} />
+        <Helmet title={`Archive | ${config.siteTitle}`} />
         <ErrorBoundary>
-          <Credits postEdges={postEdges}/>
+          <Archive postEdges={postEdges}/>
         </ErrorBoundary>
       </Layout>
     );
   }
 }
 
-export default CreditsPage;
-export const CreditsQuery = graphql`
-query Credits {
+export default ArchivePage;
+export const ArchiveQuery = graphql`
+query Archive {
   markdownRemark(
-    frontmatter: {templateKey: { in: "credits" }}
+    frontmatter: {templateKey: { in: "comic" }}
   ) {
-    html
-    timeToRead
-    excerpt
     frontmatter {
       title
-      cover
-      date
+      page
       tags
     }
     fields {
       slug
-      date
     }
   }
 }

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./About.css";
+import "./Archive.css";
 
 import { Hero, HeroBody, Columns, Column, Content } from "bloomer";
 
-class About extends Component {
+class Archive extends Component {
   render() {
-    let postNode = this.props.postEdges.markdownRemark;
+    let postNode = this.props.postEdges;
     return (
       <Hero>
         <HeroBody>
@@ -20,4 +20,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Archive;
