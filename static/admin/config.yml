@@ -34,25 +34,23 @@ collections:
         - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
         - {label: "Body", name: "body", widget: "markdown"}
         - {label: "Tags", name: "tags", widget: "list"}
-      
-        - file: "src/cms/pages/cast.md"
-          label: "Cast"
-          name: "cast"
-          fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "cast"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Cover", name: "cover", widget: "image"}
-          - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Tags", name: "tags", widget: "list"}
-        
-        - file: "src/cms/pages/credits.md"
-          label: "Credits"
-          name: "credits"
-          fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "credits"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Cover", name: "cover", widget: "image"}
-          - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Tags", name: "tags", widget: "list"}
+      - file: "src/cms/pages/cast.md"
+        label: "Cast"
+        name: "cast"
+        fields:
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "cast"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Cover", name: "cover", widget: "image"}
+        - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
+        - {label: "Body", name: "body", widget: "markdown"}
+        - {label: "Tags", name: "tags", widget: "list"}
+      - file: "src/cms/pages/credits.md"
+        label: "Credits"
+        name: "credits"
+        fields:
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "credits"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Cover", name: "cover", widget: "image"}
+        - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
+        - {label: "Body", name: "body", widget: "markdown"}
+        - {label: "Tags", name: "tags", widget: "list"}
