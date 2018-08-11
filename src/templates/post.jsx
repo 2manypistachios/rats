@@ -11,6 +11,7 @@ import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
 import { Container, Column, Columns, Level, LevelItem, Image, Notification } from "bloomer";
+import Link from "gatsby-link";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -39,6 +40,7 @@ export default class PostTemplate extends React.Component {
             <PostTags tags={post.tags} />
             <SocialLinks postPath={slug} postNode={postNode} />
           </div>
+          <NextPrevious postNode={postNode}/>
           <Disqus postNode={postNode} />
         </Container>
       </Layout>
@@ -49,7 +51,9 @@ export default class PostTemplate extends React.Component {
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(
+      fields: { slug: { eq: $slug } }
+    ) {
       html
       timeToRead
       excerpt

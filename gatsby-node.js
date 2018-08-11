@@ -3,9 +3,15 @@ const _ = require("lodash");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
 
-const postNodes = [];
+let postNodes = [];
+const createPaginatedPages = require("gatsby-paginate");
 
 function addSiblingNodes(createNodeField) {
+  postNodes = postNodes.filter(node => {
+    if (node.frontmatter.templateKey == "comic") {
+      return node;
+    }
+  });
   postNodes.sort(
     ({ frontmatter: { date: date1 } }, { frontmatter: { date: date2 } }) => {
       const dateA = moment(date1, siteConfig.dateFromFormat);
@@ -87,7 +93,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 };
 
 exports.setFieldsOnGraphQLNodeType = ({ type, actions }) => {
-  const { name } = type;
+  const { name} = type;
   const { createNodeField } = actions;
   if (name === "MarkdownRemark") {
     addSiblingNodes(createNodeField);
