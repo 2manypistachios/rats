@@ -19,26 +19,23 @@ class AboutPage extends Component {
 export default AboutPage;
 
 export const AboutQuery = graphql`
-  query AboutQuery {
-    allMarkdownRemark(
-      limit: 1
-      filter: {
-        frontmatter: {templateKey: {in: "about"}}
-      }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            date
-          }
-          frontmatter {
-            title
-            tags
-            date
-          }
-        }
-      }
+query About {
+  markdownRemark(
+    frontmatter: {templateKey: { eq: "about" }}
+  ) {
+    html
+    timeToRead
+    excerpt
+    frontmatter {
+      title
+      cover
+      date
+      tags
+    }
+    fields {
+      slug
+      date
     }
   }
+}
 `;

@@ -3,33 +3,33 @@ import { Link } from "gatsby";
 import UserLinks from "../UserLinks/UserLinks";
 import "./Footer.css";
 
-class Footer extends Component {
+import {Footer, Container, Content, Columns, Column, Icon} from "bloomer";
+
+class FooterBox extends Component {
   render() {
-    const { config } = this.props;
+    const {config} = this.props;
+    console.log(config);
     const url = config.siteRss;
     const { copyright } = config;
-    if (!copyright) {
-      return null;
-    }
+    
     return (
-      <footer className="footer">
-        <UserLinks config={config} labeled />
-        <div className="notice-container">
-          <h4>{copyright}</h4>
-
-          <Link to={url}>
-            <button>Subscribe</button>
-          </Link>
-          <h4>
-            Based on{" "}
-            <a href="https://github.com/Vagr9K/gatsby-advanced-starter">
-              Gatsby Advanced Starter
-            </a>.
-          </h4>
-        </div>
-      </footer>
+      <Footer id='footer'>
+        <Container>
+            <Content>
+                <Columns>
+                    <Column>
+                        <p>Made with <Icon hasTextColor="danger" className="fa fa-heart"></Icon>  by <a>2ManyPistachios</a>. </p>
+                        <small>Just too many.</small>
+                    </Column>
+                </Columns>
+                <Content isSize='small'>
+                    <p>The website content is licensed under <a target="_blank">{copyright}</a>.</p>
+                </Content>
+            </Content>
+        </Container>
+      </Footer>
     );
   }
 }
 
-export default Footer;
+export default FooterBox;

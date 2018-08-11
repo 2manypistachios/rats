@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Card, CardHeader, CardHeaderTitle, CardContent, Title, Subtitle, Content } from "bloomer";
-import UserInfo from "../../components/UserInfo/UserInfo";
-import config from "../../../data/SiteConfig";
+
 const _ = require("lodash");
 
 class TumblrBlog extends Component {
@@ -24,7 +23,6 @@ class TumblrBlog extends Component {
     <Card>
         <CardHeader>
             <CardHeaderTitle>Updates</CardHeaderTitle>
-            <UserInfo config={config} />
         </CardHeader>
         {updates.map(update => (
             <CardContent key={update.id}>

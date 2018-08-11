@@ -2,16 +2,17 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
-import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import Index from "../components/Index/Index";
 import Navigation from "../components/Navigation/Navigation";
 import NextLatest from "../components/NextLatest/NextLatest";
 import TumblrBlog from "../components/TumblrBlog/TumblrBlog";
+import FooterBox from "../components/Footer/Footer";
+import UserInfo from "../components/UserInfo/UserInfo";
 import config from "../../data/SiteConfig";
 
-import { Section, Container, Columns, Column, Hero, HeroBody, Level, LevelItem, Title, Subtitle } from "bloomer";
-import { Card, CardImage, CardContent, Image, Button, Footer, Content, Icon } from "bloomer";
+import { Section, Container, Columns, Column, Hero, HeroBody } from "bloomer";
+import { Card, CardContent, CardImage, Image } from "bloomer";
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 
 class IndexPage extends React.Component {
@@ -44,6 +45,11 @@ class IndexPage extends React.Component {
               </Card>
             </Column>
             <Column isSize={{mobile: 12, tablet:6}} className='center-mobile fl-3'>
+              <Card>
+                <CardContent>
+                  <UserInfo config={config} />
+                </CardContent>
+              </Card>
               <TumblrBlog postEdges={tumblrEdges}/>
             </Column>
             <Column isSize={{mobile:6, tablet:3}} className='center-mobile fl-2'>
@@ -61,23 +67,7 @@ class IndexPage extends React.Component {
           </Columns>
         </Section>
         <Section>
-          <Footer id='footer'>
-            <Container>
-                <Content>
-                    <Columns>
-                        <Column>
-                            <p>
-                                Made with <Icon hasTextColor="danger" className="fa fa-heart"></Icon>  
-                                by <a>2ManyPistachios</a>. Just too many.
-                            </p>
-                        </Column>
-                    </Columns>
-                    <Content isSize='small'>
-                        <p>The website content is licensed under <a target="_blank">CC ANS 4.0</a>.</p>
-                    </Content>
-                </Content>
-            </Container>
-          </Footer>
+          <FooterBox config={config}/>
         </Section>
         </ErrorBoundary>
       </Layout>
