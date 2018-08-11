@@ -9,54 +9,64 @@ const createPaginatedPages = require("gatsby-paginate");
 function addSiblingNodes(createNodeField) {
   postNodes = _.filter(postNodes, (node => {
     if (node.frontmatter.templateKey == "comic") {
-      console.log("AWOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
       return node;
     }
   }));
 
   console.log("sort");
   postNodes.sort(
-    ({ frontmatter: { date: date1 } }, { frontmatter: { date: date2 } }) => {
-      const dateA = moment(date1, siteConfig.dateFromFormat);
-      const dateB = moment(date2, siteConfig.dateFromFormat);
-
-      if (dateA.isBefore(dateB)) return 1;
-
-      if (dateB.isBefore(dateA)) return -1;
-
-      return 0;
+    ({ frontmatter: { page: page1 } }, { frontmatter: { page: page2 } }) => {
+      //const dateA = moment(date1, siteConfig.dateFromFormat);
+      //const dateB = moment(date2, siteConfig.dateFromFormat);
+      //if (dateA.isBefore(dateB)) return 1;
+      //if (dateB.isBefore(dateA)) return -1;
+      return page1-page2;
     }
   );
   console.log("create nodes");
   for (let i = 0; i < postNodes.length; i += 1) {
-    if (postNodes[i].frontmatter.templateKey =="comic") {
-      console.log("HEEEEEEEEEEEEEEEEEEEEEEY");
-      const nextID = i + 1 < postNodes.length ? i + 1 : 0;
-      const prevID = i - 1 > 0 ? i - 1 : postNodes.length - 1;
-      const currNode = postNodes[i];
-      const nextNode = postNodes[nextID];
-      const prevNode = postNodes[prevID];
-      createNodeField({
-        node: currNode,
-        name: "nextTitle",
-        value: nextNode.frontmatter.title
-      });
-      createNodeField({
-        node: currNode,
-        name: "nextSlug",
-        value: nextNode.fields.slug
-      });
-      createNodeField({
-        node: currNode,
-        name: "prevTitle",
-        value: prevNode.frontmatter.title
-      });
-      createNodeField({
-        node: currNode,
-        name: "prevSlug",
-        value: prevNode.fields.slug
-      });
+    let nextID, prevID;
+    if (i+1 < postNodes.length) {
+      nextID = i+1;
+    } else {
+      nextID = i;
     }
+
+    if (i-1 >= 0) {
+      prevID = i-1;
+    } else {
+      prevID = i;
+    }
+
+    const currNode = postNodes[i];
+    const nextNode = postNodes[nextID];
+    const prevNode = postNodes[prevID];
+
+    console.log("HEEEEEEEEEEEEEEEEEEEEEEY");
+    console.log("Previous Node",prevNode.frontmatter.title);
+    console.log("Current Node",currNode.frontmatter.title);
+    console.log("Next Node",nextNode.frontmatter.title);
+
+    createNodeField({
+      node: currNode,
+      name: "nextTitle",
+      value: nextNode.frontmatter.title
+    });
+    createNodeField({
+      node: currNode,
+      name: "nextSlug",
+      value: nextNode.fields.slug
+    });
+    createNodeField({
+      node: currNode,
+      name: "prevTitle",
+      value: prevNode.frontmatter.title
+    });
+    createNodeField({
+      node: currNode,
+      name: "prevSlug",
+      value: prevNode.fields.slug
+    });
   }
 }
 

@@ -23,7 +23,6 @@ class NextLatest extends React.Component {
         });
       });
     }
-    console.log(postList);
     return postList;
   }
   render() {

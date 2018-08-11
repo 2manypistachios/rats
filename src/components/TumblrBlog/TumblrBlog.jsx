@@ -7,11 +7,9 @@ const _ = require("lodash");
 class TumblrBlog extends Component {
   render() {
       const updates = []
-      console.log(this.props);
       this.props.postEdges.forEach(postEdge => {
         let options = { weekday: 'long', month: 'long', day: 'numeric' };
         let counter=0;
-        console.log(postEdge.node.tags);
         if (_.findIndex(postEdge.node.tags, "website") && counter <= 3) {
             counter++;
             updates.push({

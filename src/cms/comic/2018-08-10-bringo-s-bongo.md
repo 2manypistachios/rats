@@ -1,6 +1,6 @@
 ---
 templateKey: comic
-title: Bringo's Bongo
+title: Bringo's Bongo3
 page: 3
 cover: /images/glitchLogo.png
 date: 10/08/2018

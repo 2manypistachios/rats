@@ -1,6 +1,6 @@
 ---
 templateKey: comic
-title: The Talker's Trance yolo
+title: The Talker's Trance yolo2
 page: 2
 cover: /images/glitchLogo.png
 date: 10/08/2018
