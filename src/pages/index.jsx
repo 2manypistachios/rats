@@ -57,12 +57,12 @@ class IndexPage extends React.Component {
             <Column isSize={{mobile:6, tablet:3}} className='center-mobile fl-2'>
               <Card>
                 <CardImage>
-                  <Link to="/credits/"><Image src='https://bulma.io/images/placeholders/128x128.png'/></Link>
+                  <Link to="/archive/"><Image src='https://bulma.io/images/placeholders/128x128.png'/></Link>
                 </CardImage>
               </Card>
               <Card>
                 <CardImage>
-                  <Link to="/"><Image src='https://bulma.io/images/placeholders/128x128.png'/></Link>
+                  <Link to="/credits/"><Image src='https://bulma.io/images/placeholders/128x128.png'/></Link>
                 </CardImage>
               </Card>
             </Column>
