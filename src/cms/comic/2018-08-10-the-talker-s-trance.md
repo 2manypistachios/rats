@@ -5,7 +5,7 @@ page: 2
 cover: /images/glitchLogo.png
 date: 10/08/2018
 tags:
-  - comics
+  - "Chapter 1: Return of the lost Arc"
 ---
 ![](/images/glitch-manga-eng-01-04.jpg)
 

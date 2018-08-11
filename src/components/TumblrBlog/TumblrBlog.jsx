@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Card, CardHeader, CardHeaderTitle, CardContent, Title, Subtitle, Content } from "bloomer";
-
 const _ = require("lodash");
 
 class TumblrBlog extends Component {

@@ -5,8 +5,7 @@ page: 3
 cover: /images/glitchLogo.png
 date: 10/08/2018
 tags:
-  - comics
-  - chapter 1
+  - "Chapter 2: Bringos Revenge"
 ---
 ![](/images/glitch-manga-eng-01-07.jpg)
 

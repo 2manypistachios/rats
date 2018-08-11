@@ -14,10 +14,6 @@ function addSiblingNodes(createNodeField) {
   console.log("sort");
   postNodes.sort(
     ({ frontmatter: { page: page1 } }, { frontmatter: { page: page2 } }) => {
-      //const dateA = moment(date1, siteConfig.dateFromFormat);
-      //const dateB = moment(date2, siteConfig.dateFromFormat);
-      //if (dateA.isBefore(dateB)) return 1;
-      //if (dateB.isBefore(dateA)) return -1;
       return page1-page2;
     }
   );
