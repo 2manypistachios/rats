@@ -7,11 +7,14 @@ let postNodes = [];
 const createPaginatedPages = require("gatsby-paginate");
 
 function addSiblingNodes(createNodeField) {
-  postNodes = postNodes.filter(node => {
+  postNodes = _.filter(postNodes, (node => {
     if (node.frontmatter.templateKey == "comic") {
+      console.log("AWOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
       return node;
     }
-  });
+  }));
+
+  console.log("sort");
   postNodes.sort(
     ({ frontmatter: { date: date1 } }, { frontmatter: { date: date2 } }) => {
       const dateA = moment(date1, siteConfig.dateFromFormat);
@@ -24,32 +27,36 @@ function addSiblingNodes(createNodeField) {
       return 0;
     }
   );
+  console.log("create nodes");
   for (let i = 0; i < postNodes.length; i += 1) {
-    const nextID = i + 1 < postNodes.length ? i + 1 : 0;
-    const prevID = i - 1 > 0 ? i - 1 : postNodes.length - 1;
-    const currNode = postNodes[i];
-    const nextNode = postNodes[nextID];
-    const prevNode = postNodes[prevID];
-    createNodeField({
-      node: currNode,
-      name: "nextTitle",
-      value: nextNode.frontmatter.title
-    });
-    createNodeField({
-      node: currNode,
-      name: "nextSlug",
-      value: nextNode.fields.slug
-    });
-    createNodeField({
-      node: currNode,
-      name: "prevTitle",
-      value: prevNode.frontmatter.title
-    });
-    createNodeField({
-      node: currNode,
-      name: "prevSlug",
-      value: prevNode.fields.slug
-    });
+    if (postNodes[i].frontmatter.templateKey =="comic") {
+      console.log("HEEEEEEEEEEEEEEEEEEEEEEY");
+      const nextID = i + 1 < postNodes.length ? i + 1 : 0;
+      const prevID = i - 1 > 0 ? i - 1 : postNodes.length - 1;
+      const currNode = postNodes[i];
+      const nextNode = postNodes[nextID];
+      const prevNode = postNodes[prevID];
+      createNodeField({
+        node: currNode,
+        name: "nextTitle",
+        value: nextNode.frontmatter.title
+      });
+      createNodeField({
+        node: currNode,
+        name: "nextSlug",
+        value: nextNode.fields.slug
+      });
+      createNodeField({
+        node: currNode,
+        name: "prevTitle",
+        value: prevNode.frontmatter.title
+      });
+      createNodeField({
+        node: currNode,
+        name: "prevSlug",
+        value: prevNode.fields.slug
+      });
+    }
   }
 }
 
