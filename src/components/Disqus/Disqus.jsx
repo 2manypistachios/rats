@@ -33,13 +33,13 @@ class Disqus extends Component {
       config.pathPrefix,
       postNode.fields.slug
     );
+    console.log(post.title, url);
     return (
       <ReactDisqusComments
         shortname={config.disqusShortname}
         identifier={post.title}
         title={post.title}
         url={url}
-        category_id={post.category_id}
         onNewComment={this.notifyAboutComment}
       />
     );

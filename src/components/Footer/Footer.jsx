@@ -8,7 +8,6 @@ import {Footer, Container, Content, Columns, Column, Icon} from "bloomer";
 class FooterBox extends Component {
   render() {
     const {config} = this.props;
-    console.log(config);
     const url = config.siteRss;
     const { copyright } = config;
     
