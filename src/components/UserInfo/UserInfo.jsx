@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Follow } from "react-twitter-widgets";
 import {Level, LevelItem, Button, Icon} from "bloomer";
 
 class UserInfo extends Component {

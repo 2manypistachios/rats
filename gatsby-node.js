@@ -2,9 +2,7 @@ const path = require("path");
 const _ = require("lodash");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
-
 let postNodes = [];
-const createPaginatedPages = require("gatsby-paginate");
 
 function addSiblingNodes(createNodeField) {
   postNodes = _.filter(postNodes, (node => {

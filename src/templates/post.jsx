@@ -11,7 +11,6 @@ import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
 import { Container, Column, Columns, Content, Level, LevelItem, Image, Notification } from "bloomer";
-import Link from "gatsby-link";
 
 export default class PostTemplate extends React.Component {
   render() {

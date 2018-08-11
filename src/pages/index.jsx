@@ -11,8 +11,9 @@ import FooterBox from "../components/Footer/Footer";
 import UserInfo from "../components/UserInfo/UserInfo";
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import config from "../../data/SiteConfig";
+import Link from "gatsby-link";
 
-import { Section, Container, Columns, Column, Hero, HeroBody } from "bloomer";
+import { Section, Columns, Column, Hero, HeroBody } from "bloomer";
 import { Card, CardContent, CardImage, Image } from "bloomer";
 
 
@@ -36,12 +37,12 @@ class IndexPage extends React.Component {
             <Column isSize={{mobile:6, tablet:3}} className='center-mobile fl-1'>
               <Card>
                 <CardImage>
-                  <Image src='https://bulma.io/images/placeholders/128x128.png'/>
+                  <Link to="/about/"><Image src='https://bulma.io/images/placeholders/128x128.png'/></Link>
                 </CardImage>
               </Card>
               <Card>
                 <CardImage>
-                  <Image src='https://bulma.io/images/placeholders/128x128.png'/>
+                <Link to="/cast/"><Image src='https://bulma.io/images/placeholders/128x128.png'/></Link>
                 </CardImage>
               </Card>
             </Column>
@@ -56,12 +57,12 @@ class IndexPage extends React.Component {
             <Column isSize={{mobile:6, tablet:3}} className='center-mobile fl-2'>
               <Card>
                 <CardImage>
-                  <Image src='https://bulma.io/images/placeholders/128x128.png'/>
+                  <Link to="/credits/"><Image src='https://bulma.io/images/placeholders/128x128.png'/></Link>
                 </CardImage>
               </Card>
               <Card>
                 <CardImage>
-                  <Image src='https://bulma.io/images/placeholders/128x128.png'/>
+                  <Link to="/"><Image src='https://bulma.io/images/placeholders/128x128.png'/></Link>
                 </CardImage>
               </Card>
             </Column>
