@@ -10,7 +10,7 @@ import NextPrevious from "../components/NextPrevious/NextPrevious";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
-import { Container, Column, Columns, Level, LevelItem, Image, Notification } from "bloomer";
+import { Container, Column, Columns, Content, Level, LevelItem, Image, Notification } from "bloomer";
 import Link from "gatsby-link";
 
 export default class PostTemplate extends React.Component {
@@ -33,7 +33,7 @@ export default class PostTemplate extends React.Component {
           <SEO postPath={slug} postNode={postNode} postSEO />
           <Columns isCentered>
             <Column isSize='3/4'>
-              <div className="content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
+              <Content dangerouslySetInnerHTML={{ __html: postNode.html }} />
             </Column>
           </Columns>
           <div className="post-meta">

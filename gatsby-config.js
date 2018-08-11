@@ -31,18 +31,25 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
-    {
+    { //*****    GATSBY-SOURCE-FILESYSTEM  STATIC    *****/
       resolve: "gatsby-source-filesystem",
       options: {
         name: "assets",
         path: `${__dirname}/static/`
       }
     },
-    {
+    { //*****    GATSBY-SOURCE-FILESYSTEM  COMIC    *****/
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
         path: `${__dirname}/src/cms/comic/`
+      }
+    },
+    { //*****    GATSBY-SOURCE-FILESYSTEM  PAGES    *****/
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: `${__dirname}/src/cms/pages/`
       }
     },
     {
@@ -64,7 +71,7 @@ module.exports = {
         ]
       }
     },
-    {
+    { //*****    GATSBY-PLUGIN-GOOGLE-ANALYTIC    *****/
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: config.googleAnalyticsID
@@ -78,7 +85,6 @@ module.exports = {
     },
     "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
-    "gatsby-plugin-twitter",
     {
       resolve: `gatsby-source-tumblr`,
       options: {
@@ -118,7 +124,7 @@ module.exports = {
         setup(ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata;
           ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "GatsbyJS Material Starter";
+          ret.generator = "ParlourRats";
           return ret;
         },
         query: `

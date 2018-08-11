@@ -9,11 +9,12 @@ import NextLatest from "../components/NextLatest/NextLatest";
 import TumblrBlog from "../components/TumblrBlog/TumblrBlog";
 import FooterBox from "../components/Footer/Footer";
 import UserInfo from "../components/UserInfo/UserInfo";
+import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import config from "../../data/SiteConfig";
 
 import { Section, Container, Columns, Column, Hero, HeroBody } from "bloomer";
 import { Card, CardContent, CardImage, Image } from "bloomer";
-import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
+
 
 class IndexPage extends React.Component {
   render() {

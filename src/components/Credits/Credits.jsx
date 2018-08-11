@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./About.css";
+import "./Credits.css";
 
-import { Hero, HeroBody, Section, Columns, Column, Title, Subtitle, Content } from "bloomer";
+import { Hero, HeroBody, Columns, Column, Content } from "bloomer";
 
-class About extends Component {
+class Credits extends Component {
   render() {
     let postNode = this.props.postEdges.markdownRemark;
     return (
@@ -20,4 +20,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Credits;

@@ -128,7 +128,9 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMarkdownRemark {
+            allMarkdownRemark(filter: {
+              frontmatter: {templateKey: {in: "comic"}}
+            }) {
               edges {
                 node {
                   frontmatter {
