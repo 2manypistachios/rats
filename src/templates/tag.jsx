@@ -2,8 +2,11 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
+import Navigation from "../components/Navigation/Navigation";
 import PostListing from "../components/PostListing/PostListing";
 import config from "../../data/SiteConfig";
+
+import {Title, Section} from "bloomer";
 
 export default class TagTemplate extends React.Component {
   render() {
@@ -12,8 +15,12 @@ export default class TagTemplate extends React.Component {
     return (
       <Layout location={this.props.location}>
         <div className="tag-container">
-          <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
-          <PostListing postEdges={postEdges} />
+          <Helmet title={`All comics under "${tag}" | ${config.siteTitle}`} />
+          <Navigation/>
+          <Section textAlign="center">
+            <Title>{tag}</Title>
+            <PostListing postEdges={postEdges} />
+          </Section>
         </div>
       </Layout>
     );
