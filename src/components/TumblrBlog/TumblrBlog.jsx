@@ -8,7 +8,7 @@ class TumblrBlog extends Component {
       this.props.postEdges.forEach(postEdge => {
         let options = { weekday: 'long', month: 'long', day: 'numeric' };
         let counter=0;
-        if (_.findIndex(postEdge.node.tags, "website") && counter <= 3) {
+        if (_.findIndex(postEdge.node.tags, "nau") && counter <= 3) {
             counter++;
             updates.push({
                 title: postEdge.node.title,
