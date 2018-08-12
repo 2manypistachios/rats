@@ -1,11 +1,11 @@
 ---
 templateKey: comic
 title: Bringo's Bongo3
-page: 3
+page: 4
 cover: /images/glitchLogo.png
 date: 10/08/2018
 tags:
-  - "Chapter 2: Bringos Revenge"
+  - 'Chapter 2: Bringos Revenge'
 ---
 ![](/images/glitch-manga-eng-01-07.jpg)
 
