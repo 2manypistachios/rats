@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 import Layout from "../layout";
 import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
-import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import Navigation from "../components/Navigation/Navigation";
 import NextPrevious from "../components/NextPrevious/NextPrevious";
@@ -26,6 +25,7 @@ export default class PostTemplate extends React.Component {
     }
     return (
       <Layout location={this.props.location}>
+        <Navigation />
         <Section>
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>
