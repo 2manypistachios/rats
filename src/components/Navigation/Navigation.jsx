@@ -20,10 +20,10 @@ class Navigation extends Component {
     render() {
         return (
             <ErrorBoundary>
-                <Navbar style={{ border: 'solid 1px #00D1B2', margin: '0' }}>
+                <Navbar style={{ margin: '0' }}>
                     <NavbarBrand>
                         <NavbarItem>
-                            <img src="/images/glitchLogo.png" style={{ marginRight: 5 }} /> ParlourRats
+                            <img src="/logos/parlourrats.svg" style={{ marginRight: 5 }} />
                         </NavbarItem>
                         <NavbarItem isHidden='desktop'>
                             <Icon className='fab fa-twitter' style={{ color: '#55acee' }} />
@@ -44,11 +44,6 @@ class Navigation extends Component {
                                 </NavbarDropdown>
                             </NavbarItem>
                         </NavbarStart>
-                        <NavbarEnd>
-                            <NavbarItem href="https://twitter.com/AlgusDark" isHidden='touch'>
-                                <Icon className='fab fa-twitter' style={{ color: '#55acee' }} />
-                            </NavbarItem>
-                        </NavbarEnd>
                     </NavbarMenu>
                     </Navbar>
             </ErrorBoundary>
