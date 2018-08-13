@@ -24,12 +24,13 @@
 
 // Import a Google Font
 
-@import url('https://fonts.googleapis.com/css?family=Kirang+Haerang|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Kirang+Haerang|Quicksand|Kalam');
 $family-title:'Kirang Haerang', cursive;
 $weight-title:400;
 
-$family-subtitle:'Kirang Haerang', cursive;
-$weight-subtitle:100;
+$family-subtitle:'Kalam', cursive;
+$weight-subtitle:300;
+$button-fontfamily:'Kalam', cursive;
 
 $family-sans-serif:'Quicksand', sans-serif;
 

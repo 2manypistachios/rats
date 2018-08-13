@@ -39,12 +39,12 @@ class IndexPage extends React.Component {
               <Card>
                 <CardContent>
                   <Link to="/about/">
-                    <Button isColor="black" isSize="large" isInverted>
+                    <Button isColor="black" isSize="large" isInverted isFullWidth>
                       <Title>About</Title>
                     </Button>
                   </Link>
                   <Link to="/cast/">
-                    <Button isColor="black" isSize="large" isInverted>
+                    <Button isColor="black" isSize="large" isInverted isFullWidth>
                       <Title>Cast</Title>
                     </Button>
                   </Link>
@@ -63,12 +63,12 @@ class IndexPage extends React.Component {
               <Card>
                 <CardContent>
                   <Link to="/archive/">
-                    <Button isColor="black" isSize="large" isInverted>
+                    <Button isColor="black" isSize="large" isInverted isFullWidth>
                       <Title>Archive</Title>
                     </Button>
                   </Link>
                   <Link to="/credits/">
-                    <Button isColor="black" isSize="large" isInverted>
+                    <Button isColor="black" isSize="large" isInverted isFullWidth>
                       <Title>Credits</Title>
                     </Button>
                   </Link>
