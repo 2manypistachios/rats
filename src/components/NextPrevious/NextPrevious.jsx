@@ -33,12 +33,15 @@ class NextPrevious extends React.Component {
         <Container className='index-comic'>
           <Level isMobile>
             <LevelItem>
-              <Link to={prevSlug} key={prevTitle}><Button isColor='danger' isOutlined>Back</Button></Link>
+              <Link to={prevSlug} key={prevTitle}><Button isColor='black' isSize='medium' isOutlined>Back</Button></Link>
             </LevelItem>
             <LevelItem>
-              <Link to={nextSlug} key={nextTitle}><Button isColor='success' isOutlined>Next</Button></Link>
+              <Link to="/" key="home"><Button isColor='black' isSize='medium' isOutlined>Home</Button></Link>
             </LevelItem>
-            </Level>
+            <LevelItem>
+              <Link to={nextSlug} key={nextTitle}><Button isColor='black' isSize='medium' isOutlined>Next</Button></Link>
+            </LevelItem>
+          </Level>
         </Container>
     );
   }

@@ -11,7 +11,7 @@ import NextPrevious from "../components/NextPrevious/NextPrevious";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
-import { Container, Column, Columns, Content } from "bloomer";
+import { Section, Column, Columns, Content, Level, LevelItem } from "bloomer";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -26,24 +26,27 @@ export default class PostTemplate extends React.Component {
     }
     return (
       <Layout location={this.props.location}>
-        <Container>
+        <Section>
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
-          <Navigation/>
           <Columns isCentered>
-            <Column isSize='3/4'>
-              <Content dangerouslySetInnerHTML={{ __html: postNode.html }} />
+            <Column isSize='3/5' isOffset="1/5" has-text-centered>
+              <Level>
+                <LevelItem hasTextAlign="centered">
+                 <Content dangerouslySetInnerHTML={{ __html: postNode.html }} />
+                </LevelItem>
+              </Level>
             </Column>
           </Columns>
           <NextPrevious postNode={postNode}/>
           <div className="post-meta">
             <PostTags tags={post.tags} />
-            <SocialLinks postPath={slug} postNode={postNode} />
           </div>
           <Disqus postNode={postNode} />
-        </Container>
+          <SocialLinks postPath={slug} postNode={postNode} />
+        </Section>
       </Layout>
     );
   }

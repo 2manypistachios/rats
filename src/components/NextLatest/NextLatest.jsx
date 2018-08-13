@@ -28,16 +28,16 @@ class NextLatest extends React.Component {
   render() {
     const postList = this.getPostList();
     return (
-        <Container className='index-comic'>
-          <Level isMobile>
-            <LevelItem>
-              <Link to={postList[0].path} key={postList[0].title}><Button isColor='danger' isOutlined>First</Button></Link>
-            </LevelItem>
-            <LevelItem>
-              <Link to={postList[1].path} key={postList[1].title}><Button isColor='success' isOutlined>Last</Button></Link>
-            </LevelItem>
-            </Level>
-        </Container>
+      <Container className='index-comic'>
+        <Level isMobile>
+          <LevelItem>
+            <Link to={postList[0].path} key={postList[0].title}><Button isColor='black' isSize='medium' isOutlined>First</Button></Link>
+          </LevelItem>
+          <LevelItem>
+            <Link to={postList[1].path} key={postList[1].title}><Button isColor='black' isSize='medium' isOutlined>Last</Button></Link>
+          </LevelItem>
+          </Level>
+      </Container>
     );
   }
 }

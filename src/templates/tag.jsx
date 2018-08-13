@@ -16,7 +16,6 @@ export default class TagTemplate extends React.Component {
       <Layout location={this.props.location}>
         <div className="tag-container">
           <Helmet title={`All comics under "${tag}" | ${config.siteTitle}`} />
-          <Navigation/>
           <Section textAlign="center">
             <Title>{tag}</Title>
             <PostListing postEdges={postEdges} />

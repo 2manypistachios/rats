@@ -8,7 +8,7 @@ class Index extends Component {
       <Container className="index">
         <Columns>
           <Column isSize={{tablet: 4}} isOffset={{tablet: 4}}>
-              <Image className='has-image-centered' src='/images/glitchLogo.png'/>
+              <Image className='has-image-centered' src='/images/totslogo.png'/>
           </Column>
         </Columns>
         <Level>

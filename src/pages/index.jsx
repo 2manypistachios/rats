@@ -14,7 +14,7 @@ import config from "../../data/SiteConfig";
 import Link from "gatsby-link";
 
 import { Section, Columns, Column, Hero, HeroBody } from "bloomer";
-import { Card, CardContent, CardImage, Image } from "bloomer";
+import { Card, CardContent, Title, Button } from "bloomer";
 
 
 class IndexPage extends React.Component {
@@ -26,10 +26,10 @@ class IndexPage extends React.Component {
         <Helmet title={config.siteTitle} />
         <SEO />
         <ErrorBoundary>
-        <Navigation />
-        <Hero isSize='is-medium' isColor='black' isBold className='index-section'>
-          <HeroBody hasTextAlign='centered'>       
+        <Hero isSize='is-medium' isColor='light' isBold className='index-section'>
+          <HeroBody hasTextAlign='centered'>
             <Index />
+            <br/>
             <NextLatest postEdges={postEdges} />
           </HeroBody>
         </Hero>
@@ -37,14 +37,18 @@ class IndexPage extends React.Component {
           <Columns isMobile isMultiline className='ordered-mobile'>
             <Column isSize={{mobile:6, tablet:3}} className='center-mobile fl-1'>
               <Card>
-                <CardImage>
-                  <Link to="/about/"><Image src='https://bulma.io/images/placeholders/128x128.png'/></Link>
-                </CardImage>
-              </Card>
-              <Card>
-                <CardImage>
-                <Link to="/cast/"><Image src='https://bulma.io/images/placeholders/128x128.png'/></Link>
-                </CardImage>
+                <CardContent>
+                  <Link to="/about/">
+                    <Button isColor="black" isSize="large" isInverted>
+                      <Title>About</Title>
+                    </Button>
+                  </Link>
+                  <Link to="/cast/">
+                    <Button isColor="black" isSize="large" isInverted>
+                      <Title>Cast</Title>
+                    </Button>
+                  </Link>
+                </CardContent>
               </Card>
             </Column>
             <Column isSize={{mobile: 12, tablet:6}} className='center-mobile fl-3'>
@@ -57,14 +61,18 @@ class IndexPage extends React.Component {
             </Column>
             <Column isSize={{mobile:6, tablet:3}} className='center-mobile fl-2'>
               <Card>
-                <CardImage>
-                  <Link to="/archive/"><Image src='https://bulma.io/images/placeholders/128x128.png'/></Link>
-                </CardImage>
-              </Card>
-              <Card>
-                <CardImage>
-                  <Link to="/credits/"><Image src='https://bulma.io/images/placeholders/128x128.png'/></Link>
-                </CardImage>
+                <CardContent>
+                  <Link to="/archive/">
+                    <Button isColor="black" isSize="large" isInverted>
+                      <Title>Archive</Title>
+                    </Button>
+                  </Link>
+                  <Link to="/credits/">
+                    <Button isColor="black" isSize="large" isInverted>
+                      <Title>Credits</Title>
+                    </Button>
+                  </Link>
+                </CardContent>
               </Card>
             </Column>
           </Columns>

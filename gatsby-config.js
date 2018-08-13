@@ -52,6 +52,7 @@ module.exports = {
         path: `${__dirname}/src/cms/pages/`
       }
     },
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-transformer-remark",
       options: {
