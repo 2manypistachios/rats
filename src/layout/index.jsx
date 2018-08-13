@@ -47,6 +47,7 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+          
         </Helmet>
         {children}
       </div>

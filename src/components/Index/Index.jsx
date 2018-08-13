@@ -6,8 +6,8 @@ class Index extends Component {
   render() {
     return (
       <Container className="index">
-        <Columns>
-          <Column isSize={{tablet: 4}} isOffset={{tablet: 4}}>
+        <Columns isCentered>
+          <Column isSize={{tablet: 3}}>
               <Image className='has-image-centered' src='/images/totslogo.png'/>
           </Column>
         </Columns>
