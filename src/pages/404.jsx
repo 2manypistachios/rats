@@ -50,18 +50,17 @@ class LostPage extends Component {
           <Section>
             <Columns isMobile isCentered isVCentered>
               <Column isSize={6}>
-                <Notification isColor="warning" hasTextAlign="centered">
+                <Notification isColor="dark" hasTextAlign="centered">
                   <p>You are lost. In life. In relationships. In destiny.</p>
                   <p>But more importantly in this website.</p>
+                  <br/>
                   <Level>
                     <LevelItem>
                       <Button href="/">Go Back.</Button>
                     </LevelItem>
-                    <LevelItem>
-                      <Button isColor='danger' onClick={this.onClickGiveup} style={this.state.style}>{this.state.message[this.state.giveup-1]}</Button>
-                    </LevelItem>
                   </Level>
-                  <Progress isSize='medium' isColor='danger' value={this.state.giveup} max={this.state.message.length} />
+                  <Progress isSize='medium' isColor='light' value={this.state.giveup} max={this.state.message.length} />
+                  <Button isColor='danger' onClick={this.onClickGiveup} style={this.state.style}>{this.state.message[this.state.giveup-1]}</Button>
                 </Notification>
               </Column>
             </Columns>

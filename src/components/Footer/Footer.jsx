@@ -15,12 +15,6 @@ class FooterBox extends Component {
       <Footer id='footer'>
         <Container>
             <Content>
-                <Columns>
-                    <Column>
-                        <p>Made with <Icon hasTextColor="danger" className="fa fa-heart"></Icon>  by <a>2ManyPistachios</a>. </p>
-                        <small>Just too many.</small>
-                    </Column>
-                </Columns>
                 <Content isSize='small'>
                     <p>The website content is licensed under <a target="_blank">{copyright}</a>.</p>
                 </Content>
