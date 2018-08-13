@@ -8,7 +8,7 @@ module.exports = {
   siteDescription: "The story of.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
-  googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
+  googleAnalyticsID: "UA-123878434-1", // GA tracking ID.
   disqusShortname: "parlourrats", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
