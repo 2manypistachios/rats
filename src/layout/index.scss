@@ -23,13 +23,16 @@
 //$input-shadow: none;
 
 // Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Kalam:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Kirang+Haerang');
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
-$family-title:'Gloria Hallelujah', cursive;
+$family-title:'Kirang Haerang', cursive;
 $weight-title:400;
 
 $family-subtitle:'Kirang Haerang', cursive;
 $weight-subtitle:100;
+
+$family-sans-serif:'Kalam', cursive;
 
 // Import only what you need from Bulma
 @import "~bulma/sass/utilities/_all";

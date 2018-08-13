@@ -26,7 +26,7 @@ class TumblrBlog extends Component {
         {updates.map(update => (
             <CardContent key={update.id}>
                 <Title isSize="3">{update.title}</Title>
-                <i>{update.date}</i>
+                <b>{update.date}</b>
                 <div className="content" dangerouslySetInnerHTML={{ __html: update.body }} />
             </CardContent>
         ))}
