@@ -1,3 +1,8 @@
+.index-section {
+  background:url(/logos/maze.png), linear-gradient(#999, rgb(255, 255, 255));;
+  background-blend-mode: color-dodge;
+}
+
 .image-background {
     background: linear-gradient( rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5) ),

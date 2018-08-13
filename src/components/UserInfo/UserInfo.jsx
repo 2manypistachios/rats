@@ -7,7 +7,7 @@ class UserInfo extends Component {
     return (
       <Level isMobile>
         <LevelItem>
-          <a className="button is-info" href={tumblrUrl}>
+          <a className="button is-dark" href={tumblrUrl}>
             <span className="icon">
               <i className="fab fa-tumblr"></i>
             </span>
@@ -15,7 +15,7 @@ class UserInfo extends Component {
           </a>
         </LevelItem>
         <LevelItem>
-          <a className="button is-primary" href={twitterUrl}>
+          <a className="button is-dark" href={twitterUrl}>
             <span className="icon">
               <i className="fab fa-twitter"></i>
             </span>
@@ -23,7 +23,7 @@ class UserInfo extends Component {
           </a>
         </LevelItem>
         <LevelItem>
-          <a className="button is-info" href={discordUrl}>
+          <a className="button is-dark" href={discordUrl}>
             <span className="icon">
               <i className="fab fa-discord"></i>
             </span>

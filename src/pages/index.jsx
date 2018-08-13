@@ -4,8 +4,6 @@ import { graphql } from "gatsby";
 import Layout from "../layout";
 import SEO from "../components/SEO/SEO";
 import Index from "../components/Index/Index";
-import Navigation from "../components/Navigation/Navigation";
-import NextLatest from "../components/NextLatest/NextLatest";
 import TumblrBlog from "../components/TumblrBlog/TumblrBlog";
 import FooterBox from "../components/Footer/Footer";
 import UserInfo from "../components/UserInfo/UserInfo";
@@ -26,13 +24,7 @@ class IndexPage extends React.Component {
         <Helmet title={config.siteTitle} />
         <SEO />
         <ErrorBoundary>
-        <Hero isSize='is-medium' isColor='light' isBold className='index-section'>
-          <HeroBody hasTextAlign='centered'>
-            <Index />
-            <br/>
-            <NextLatest postEdges={postEdges} />
-          </HeroBody>
-        </Hero>
+        <Index postEdges={postEdges}/>
         <Section isMarginless>
           <Columns isMobile isMultiline className='ordered-mobile'>
             <Column isSize={{mobile:6, tablet:3}} className='center-mobile fl-1'>
