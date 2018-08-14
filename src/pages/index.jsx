@@ -94,10 +94,12 @@ export const pageQuery = graphql`
         node {
           fields {
             slug
+            date
           }
           frontmatter {
             title
             tags
+            date
           }
         }
       }
