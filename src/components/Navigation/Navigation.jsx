@@ -25,9 +25,6 @@ class Navigation extends Component {
                         <NavbarItem>
                             <img src="/logos/parlourrats.svg" style={{ marginRight: 5 }} />
                         </NavbarItem>
-                        <NavbarItem isHidden='desktop'>
-                            <Icon className='fab fa-twitter' style={{ color: '#55acee' }} />
-                        </NavbarItem>
                         <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />
                     </NavbarBrand>
                     <NavbarMenu isActive={this.state.isActive} onClick={this.onClickNav}>
