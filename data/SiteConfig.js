@@ -5,7 +5,7 @@ module.exports = {
   siteLogo: "/logos/parlourrats.png", // Logo used for SEO and manifest.
   siteUrl: "https://taleoftheserpent.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: "The story of.", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "The story of the serpent.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
   googleAnalyticsID: "UA-123878434-1", // GA tracking ID.
