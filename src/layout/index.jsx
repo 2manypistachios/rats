@@ -46,8 +46,14 @@ export default class MainLayout extends React.Component {
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/logos/apple-touch-icon.png"/>
+          <link rel="icon" type="image/png" sizes="32x32" href="/logos/favicon-32x32.png"/>
+          <link rel="icon" type="image/png" sizes="16x16" href="/logos/favicon-16x16.png"/>
+          <link rel="manifest" href="/logos/site.webmanifest"/>
+          <link rel="mask-icon" href="/logos/safari-pinned-tab.svg" color="#5bbad5"/>
+          <meta name="msapplication-TileColor" content="#da532c"/>
+          <meta name="theme-color" content="#ffffff"/>
           <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-          
         </Helmet>
         {children}
       </div>
