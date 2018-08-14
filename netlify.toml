@@ -8,7 +8,7 @@
 [[headers]]
   for = "/*" # This defines which paths this specific [[headers]] block will cover.
   [headers.values]
-    Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+    Strict-Transport-Security= max-age=63072000; includeSubDomains; preload
 
 [[redirects]]
   # Redirect default Netlify subdomain to primary domain
