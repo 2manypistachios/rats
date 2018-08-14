@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: "TaleOfTheSerpent", // Site title.
+  siteTitle: "Tale Of The Serpent", // Site title.
   siteTitleShort: "TOTS", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "TaleOfTheSerpent", // Alternative site title for SEO.
   siteLogo: "/logos/parlourrats.png", // Logo used for SEO and manifest.
