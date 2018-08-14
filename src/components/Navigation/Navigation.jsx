@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import { Link } from "gatsby";
 import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
-import { Navbar, NavbarBrand, NavbarItem, NavbarBurger, NavbarMenu, NavbarStart, NavbarEnd, NavbarLink} from "bloomer";
-import { NavbarDropdown, NavbarDivider, Icon, Field, Control, Button } from "bloomer";
+import { Navbar, NavbarBrand, NavbarItem, NavbarBurger, NavbarMenu, NavbarStart, NavbarLink} from "bloomer";
+import { NavbarDropdown, NavbarDivider } from "bloomer";
 
 
 class Navigation extends Component {
@@ -23,7 +24,7 @@ class Navigation extends Component {
                 <Navbar style={{ margin: '0' }}>
                     <NavbarBrand>
                         <NavbarItem>
-                            <img src="/logos/parlourrats.svg" style={{ marginRight: 5 }} />
+                            <Link to="/"><img src="/logos/parlourrats.svg" style={{ marginRight: 5 }} /></Link>
                         </NavbarItem>
                         <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />
                     </NavbarBrand>

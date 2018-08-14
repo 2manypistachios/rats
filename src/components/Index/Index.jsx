@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "gatsby";
 import { Hero, HeroBody, Container, Column, Columns, Level, LevelItem, Image } from "bloomer";
 import NextLatest from "../../components/NextLatest/NextLatest";
 import "./Index.css";
@@ -6,6 +7,7 @@ import "./Index.css";
 class Index extends Component {
   render() {
     const postEdges = this.props.postEdges;
+    const lastSlug = postEdges[postEdges.length-1].node.fields.slug;
     return (
       <Hero isSize='is-medium' className='index-section'>
           <HeroBody hasTextAlign='centered'>
@@ -17,7 +19,7 @@ class Index extends Component {
             </Columns>
             <Level>
               <LevelItem>
-                <Image className='has-image-centered' src='/images/glitchComic.gif'/>
+                <Link to={lastSlug}><Image className='has-image-centered' src='/images/glitchComic.gif'/></Link>
               </LevelItem>
             </Level>
           </Container>

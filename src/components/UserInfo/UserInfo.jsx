@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Level, LevelItem, Container } from "bloomer";
+import {Level, LevelItem } from "bloomer";
 
 class UserInfo extends Component {
   render() {
