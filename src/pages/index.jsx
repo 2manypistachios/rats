@@ -11,9 +11,8 @@ import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import config from "../../data/SiteConfig";
 import Link from "gatsby-link";
 
-import { Section, Columns, Column, Hero, HeroBody } from "bloomer";
+import { Section, Columns, Column, Hero, HeroBody, Level, LevelItem } from "bloomer";
 import { Card, CardContent, Title, Button } from "bloomer";
-
 
 class IndexPage extends React.Component {
   render() {
@@ -27,45 +26,49 @@ class IndexPage extends React.Component {
         <Index postEdges={postEdges}/>
         <Section isMarginless>
           <Columns isMobile isMultiline className='ordered-mobile'>
-            <Column isSize={{mobile:6, tablet:3}} className='center-mobile fl-1'>
+            <Column isSize={{mobile:12, tablet:10, desktop: 8, widescreen: 6}} isOffset={{mobile:0, tablet:1, desktop:2, widescreen: 3}} className='center-mobile fl-1'>
               <Card>
                 <CardContent>
-                  <Link to="/about/">
-                    <Button isColor="black" isSize="large" isInverted isFullWidth>
-                      <Title>About</Title>
-                    </Button>
-                  </Link>
-                  <Link to="/cast/">
-                    <Button isColor="black" isSize="large" isInverted isFullWidth>
-                      <Title>Cast</Title>
-                    </Button>
-                  </Link>
+                  <Level>
+                    <LevelItem>
+                      <Link to="/about/">
+                        <Button isColor="black" isSize="medium" isInverted>
+                          <Title>About</Title>
+                        </Button>
+                      </Link>
+                    </LevelItem>
+                    <LevelItem>
+                      <Link to="/cast/">
+                        <Button isColor="black" isSize="medium" isInverted>
+                          <Title>Cast</Title>
+                        </Button>
+                      </Link>
+                    </LevelItem>
+                    <LevelItem>
+                      <Link to="/archive/">
+                        <Button isColor="black" isSize="medium" isInverted>
+                          <Title>Archive</Title>
+                        </Button>
+                      </Link>
+                    </LevelItem>
+                    <LevelItem>
+                      <Link to="/credits/">
+                        <Button isColor="black" isSize="medium" isInverted>
+                          <Title>Credits</Title>
+                        </Button>
+                      </Link>
+                    </LevelItem>
+                  </Level>
                 </CardContent>
               </Card>
             </Column>
-            <Column isSize={{mobile: 12, tablet:6}} className='center-mobile fl-3'>
+            <Column isSize={{mobile:12, tablet:10, desktop: 8, widescreen: 6}} isOffset={{mobile:0, tablet:1, desktop:2, widescreen: 3}} className='center-mobile fl-3'>
               <Card>
                 <CardContent>
                   <UserInfo config={config} />
                 </CardContent>
               </Card>
               <TumblrBlog postEdges={tumblrEdges}/>
-            </Column>
-            <Column isSize={{mobile:6, tablet:3}} className='center-mobile fl-2'>
-              <Card>
-                <CardContent>
-                  <Link to="/archive/">
-                    <Button isColor="black" isSize="large" isInverted isFullWidth>
-                      <Title>Archive</Title>
-                    </Button>
-                  </Link>
-                  <Link to="/credits/">
-                    <Button isColor="black" isSize="large" isInverted isFullWidth>
-                      <Title>Credits</Title>
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
             </Column>
           </Columns>
         </Section>

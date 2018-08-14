@@ -26,13 +26,13 @@ export default class PostTemplate extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Navigation />
-        <Section>
+        <Section isPaddingless isMarginless>
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
           <Columns isCentered>
-            <Column isSize='3/5' isOffset="1/5" has-text-centered>
+            <Column isSize={{mobile:12, tablet:12, desktop: 8, widescreen: 6}} has-text-centered>
               <Level>
                 <LevelItem hasTextAlign="centered">
                  <Content dangerouslySetInnerHTML={{ __html: postNode.html }} />
