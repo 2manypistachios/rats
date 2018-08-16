@@ -7,7 +7,7 @@ import "./Index.css";
 class Index extends Component {
   render() {
     const postEdges = this.props.postEdges;
-    const lastSlug = postEdges[postEdges.length-1].node.fields.slug;
+    const firstSlug = postEdges[0].node.fields.slug;
     return (
       <Hero isSize='is-medium' className='index-section'>
           <HeroBody hasTextAlign='centered'>
@@ -17,11 +17,11 @@ class Index extends Component {
                   <Image className='has-image-centered' src='/logos/totslogo.svg' className={{color:"white"}}/>
               </Column>
             </Columns>
-            <Level>
-              <LevelItem>
-                <Link to={lastSlug}><Image className='has-image-centered' src='/images/glitchComic.gif'/></Link>
-              </LevelItem>
-            </Level>
+            <Columns isCentered>
+              <Column isSize={{tablet:10, desktop: 6}}>
+                <Link to={firstSlug}><Image className='has-image-centered' src='/logos/totscomic.svg'/></Link>
+              </Column>
+            </Columns>
           </Container>
             <br/>
             <NextLatest postEdges={postEdges} />
