@@ -11,14 +11,14 @@ tags:
 
 <still working on this page at the moment>
 
-## Oz
+### Oz
 > Main artist, Author\
 > Tumblr - [Siromany](http://siromany.tumblr.com/)
 
-## Matte
+### Matte
 > Editor, Co-writer\
 > Tumblr - [Gibblsy](http://gibblsy.tumblr.com)
 
-## Maxum <please fill out your own credits dude> 
-> Website design and framework\
-> Email - 
+### Maxum, @2ManyPistachios <please fill out your own credits dude> 
+> Website design, Development, and Maintenance\
+> Email - [2manypistachios@gmail.com](2manypistachios@gmail.com)
