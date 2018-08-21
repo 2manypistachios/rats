@@ -17,11 +17,6 @@ class Index extends Component {
                   <Image className='has-image-centered' src='/logos/totslogo.svg' className={{color:"white"}}/>
               </Column>
             </Columns>
-            <Columns isCentered>
-              <Column isSize={{tablet:10, desktop: 6}}>
-                <Link to={firstSlug}><Image className='has-image-centered' src='/logos/totscomic.svg'/></Link>
-              </Column>
-            </Columns>
           </Container>
             <br/>
             <NextLatest postEdges={postEdges} />
