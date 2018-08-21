@@ -16,14 +16,18 @@ tags:
 
 ## Act 1
 
-### Hazelle
->![]
+### Hazelle Salphomer Salthis
+>![]\
+> Only child of Lady and Lord Salthis, Hazelle is curious to a fault, and infatuated with mysteries.
 
-### Aurabus
->![]
+### Aurabus Vellenian Salthis
+>![]\
+> Residing lady over Greygarden, She is a pious woman who places power above all else, and Hazelle above power.
 
-### Aullin
->![]
+### Aullin Deshda
+>![]\
+>  Presiding minister of the keep’s cathedrial and court physician, Aullin leads a very private life among his studies and his apprentice.
 
-### Custodi
->![]
+### Custodi Ahn
+>![]\
+> Apprentice and adopted son of Aullin, this young man exists.
