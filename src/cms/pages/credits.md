@@ -7,16 +7,21 @@ tags:
   - test
   - Credits
 ---
+[st]: http://siromany.tumblr.com
+[gt]: http://gibblsy.tumblr.com
+[me]: mailto:2manypistachios@gmail.com
+[500blank]: /images/500blank.png
+
 # The Creators
 
-### Oz
+### Oz ![alt text][500blank]
 > Main artist, Author\
-> Tumblr - [Siromany](http://siromany.tumblr.com/)
+> Tumblr - [Siromany][st]
 
 ### Matte
 > Editor, Co-writer\
-> Tumblr - [Gibblsy](http://gibblsy.tumblr.com)
+> Tumblr - [Gibblsy][gt]
 
 ### Maxum *aka 2ManyPistachios*
 > Website design, Development, and Maintenance\
-> Email - [2manypistachios@gmail.com](2manypistachios@gmail.com)
+> Email - [2manypistachios@gmail.com][me]
