@@ -14,7 +14,8 @@ tags:
 
 # The Creators
 
-### Oz ![alt text][500blank]
+### Oz 
+> ![alt text][500blank]\
 > Main artist, Author\
 > Tumblr - [Siromany][st]
 
