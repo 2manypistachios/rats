@@ -11,9 +11,19 @@ tags:
 
 ##### \*This list updates regularly when a new character is introduced
 
-### By act
-- [Act 1](#act1)
+### By Act
+> [Act 1](#act-1)
 
-# Act 1
+## Act 1
 
+### Hazelle
+>![]
 
+### Aurabus
+>![]
+
+### Aullin
+>![]
+
+### Custodi
+>![]
