@@ -20,9 +20,11 @@ tags:
 > Tumblr - [Siromany][st]
 
 ### Matte
+> ![alt text][500blank]\
 > Editor, Co-writer\
 > Tumblr - [Gibblsy][gt]
 
 ### Maxum *aka 2ManyPistachios*
+> ![alt text][500blank]\
 > Website design, Development, and Maintenance\
 > Email - [2manypistachios@gmail.com][me]
