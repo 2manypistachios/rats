@@ -54,7 +54,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 <img src="/images/aur.png">
 </aside>
 <article>
-<p> Residing lady over Greygarden, She is a pious woman who places power above all else, and Hazelle above power.
+<p> Residing Lady over Greygarden, She is a pious woman who places power above all else, and Hazelle above power.
 </p>
 <p>Age: 44</p>
 </article>
