@@ -33,7 +33,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </header>
 <section>
 <aside>
-<img src="http://www.tots.cc/images/haz.png">
+<img src="/images/haz.png">
 </aside>
 <article>
 <p>Only child of Lady and Lord Salthis, Hazelle is curious to a fault, and infatuated with mysteries.</p>
@@ -42,7 +42,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </section>
 </body>
 </div>
-<img src="http://www.tots.cc/images/500blank.png" height=20 width=0>
+<img src="/images/500blank.png" height=20 width=0>
 <div>
 </head>
 <body>
@@ -51,7 +51,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </header>
 <section>
 <aside>
-<img src="http://www.tots.cc/images/aur.png">
+<img src="/images/aur.png">
 </aside>
 <article>
 <p> Residing lady over Greygarden, She is a pious woman who places power above all else, and Hazelle above power.
@@ -61,7 +61,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </section>
 </body>
 </div>
-<img src="http://www.tots.cc/images/500blank.png" height=20 width=0>
+<img src="/images/500blank.png" height=20 width=0>
 <div>
 </head>
 <body>
@@ -70,7 +70,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </header>
 <section>
 <aside>
-<img src="http://www.tots.cc/images/aul.png">
+<img src="/images/aul.png">
 </aside>
 <article>
 <p>Presiding minister of the keep’s cathedrial and court physician, Aullin leads a very private life among his studies and his apprentice.</p>
@@ -79,7 +79,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </section>
 </body>
 </div>
-<img src="http://www.tots.cc/images/500blank.png" height=20 width=0>
+<img src="/images/500blank.png" height=20 width=0>
 <div>
 </head>
 <body>
@@ -88,7 +88,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </header>
 <section>
 <aside>
-<img src="http://www.tots.cc/images/cus.png">
+<img src="/images/cus.png">
 </aside>
 <article>
 <p>Apprentice and adopted son of Aullin, this young man exists.</p>
