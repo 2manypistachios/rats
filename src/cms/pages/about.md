@@ -9,4 +9,4 @@ tags:
 ---
 # About the World
 
-there are things to know, but for now you get nothing... (sorry)
+there are things to know, but for now you get nothing, for now... (sorry)
