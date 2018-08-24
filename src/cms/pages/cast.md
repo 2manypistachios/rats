@@ -28,12 +28,11 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 Act 1
 ------
 
+## Hazelle Salphomer Salthis
+
 <div> <!--hazelle-->
 </head>
 <body>
-<header>
-<h2>Hazelle Salphomer Salthis</h2>
-</header>
 <section>
 <aside>
 <img src="/images/haz-a1.png">
@@ -47,13 +46,11 @@ Act 1
 </div>
 
 ---
+## Aurabus Vellenian Salthis
 
 <div> <!--aurabus-->
 </head>
 <body>
-<header>
-<h2>Aurabus Vellenian Salthis</h2>
-</header>
 <section>
 <aside>
 <img src="/images/aur-a1.png">
