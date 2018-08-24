@@ -7,14 +7,14 @@ tags:
   - Cast
   - test
 ---
-<div> <!--establishing character box style-->
+<div>
 <style>
 * {box-sizing: border-box;}
-img {height: 400px; width: 300px;}
-header {font-size: 14px; color: black; padding: 5px;}
-section {display: -webkit-flex;}
-aside{height: 400px; width: 300px; object-fit: fill;}
-article {background-color: #eee; padding: 5px; font-size: 18px; width: 600px;}
+header {text-align: left; font-size: 14px; color: black;}
+section {display: -webkit-flex; display: flex;}
+aside {padding: 0;}
+article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding: 5px; font-size: 18px;}
+@media (max-width: 600px) {section {-webkit-flex-direction: column; flex-direction: column;}}
 </style>
 </div>
 
