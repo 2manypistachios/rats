@@ -10,10 +10,9 @@ tags:
 <div>
 <style>
 * {box-sizing: border-box;}
-header {text-align: left; font-size: 14px; color: black;}
 section {display: -webkit-flex; display: flex;}
 aside {padding: 0;}
-article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding: 5px; font-size: 18px;}
+article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding: 5px; font-size: 22px;}
 @media (max-width: 600px) {section {-webkit-flex-direction: column; flex-direction: column;}}
 </style>
 </div>
@@ -25,13 +24,12 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 ### By Act
 > [Act 1](#act-1)
 
-Act 1
-------
+## Act 1
 
-## Hazelle Salphomer Salthis
+---
+### Hazelle Salphomer Salthis
 
 <div> <!--hazelle-->
-</head>
 <body>
 <section>
 <aside>
@@ -46,10 +44,9 @@ Act 1
 </div>
 
 ---
-## Aurabus Vellenian Salthis
+### Aurabus Vellenian Salthis
 
 <div> <!--aurabus-->
-</head>
 <body>
 <section>
 <aside>
@@ -64,13 +61,10 @@ Act 1
 </div>
 
 ---
+### Aullin Deshda
 
 <div> <!--aullin-->
-</head>
 <body>
-<header>
-<h2>Aullin Deshda</h2>
-</header>
 <section>
 <aside>
 <img src="/images/aul-a1.png">
@@ -84,13 +78,10 @@ Act 1
 </div>
 
 ---
+### Custodi Ahn
 
 <div> <!--custodi-->
-</head>
 <body>
-<header>
-<h2>Custodi Ahn</h2>
-</header>
 <section>
 <aside>
 <img src="/images/cus-a1.png">
