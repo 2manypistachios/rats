@@ -10,9 +10,9 @@ tags:
 <div> <!--establishing character box style-->
 <style>
 * {box-sizing: border-box;}
-img {width: 250px;}
 header {text-align: left; font-size: 14px; color: black;}
 section {display: -webkit-flex; display: flex;}
+aside{height: 400px; width: 300px;}
 article {background-color: #eee; padding: 5px; font-size: 18px;}
 </style>
 </div>
@@ -27,6 +27,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 ## Act 1
 
 <div> <!--act 1 list-->
+
 <div> <!--hazelle-->
 </head>
 <body>
@@ -44,7 +45,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </section>
 </body>
 </div>
-<img src="/images/500blank.png" height="20" width="0">
+
 <div> <!--aurabus-->
 </head>
 <body>
@@ -62,7 +63,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </section>
 </body>
 </div>
-<img src="/images/500blank.png" height="20" width="0">
+
 <div> <!--aullin-->
 </head>
 <body>
@@ -80,7 +81,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </section>
 </body>
 </div>
-<img src="/images/500blank.png" height="20" width="0">
+
 <div> <!--custodi-->
 </head>
 <body>
