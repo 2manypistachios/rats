@@ -23,7 +23,6 @@ tags:
 > Editor, Co-writer\
 > Tumblr - [Gibblsy][gt]
 
-### Maxum *aka 2ManyPistachios*
-> ![]\
+### Maxum
 > Website design, Development, and Maintenance\
 > Email - [2manypistachios@gmail.com][me]
