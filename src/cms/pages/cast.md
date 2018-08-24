@@ -11,7 +11,7 @@ tags:
 <style>
 * {box-sizing: border-box;}
 img {height: 400px; width: 300px;}
-header {font-size: 14px; color: black; height:60px;}
+header {font-size: 14px; color: black; padding: 5px;}
 section {display: -webkit-flex;}
 aside{height: 400px; width: 300px; object-fit: fill;}
 article {background-color: #eee; padding: 5px; font-size: 18px; width: 600px;}
@@ -26,8 +26,6 @@ article {background-color: #eee; padding: 5px; font-size: 18px; width: 600px;}
 > [Act 1](#act-1)
 
 ## Act 1
-
-<div> <!--act 1 list-->
 
 <div> <!--hazelle-->
 </head>
@@ -99,5 +97,4 @@ article {background-color: #eee; padding: 5px; font-size: 18px; width: 600px;}
 </article>
 </section>
 </body>
-</div>
 </div>
