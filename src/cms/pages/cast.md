@@ -11,7 +11,7 @@ tags:
 <style>
 * {box-sizing: border-box;}
 header {text-align: left; font-size: 14px; color: black;}
-section {display: -webkit-flex;}
+section {display: -webkit-flex; display: flex;}
 aside {padding: 0;}
 article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding: 5px; font-size: 18px;}
 @media (max-width: 600px) {section {-webkit-flex-direction: column; flex-direction: column;}}
