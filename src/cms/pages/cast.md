@@ -11,7 +11,6 @@ tags:
 <style>
 * {box-sizing: border-box;}
 img {height: 400px; width: 300px;}
-body {width: 900px}
 header {font-size: 14px; color: black; height:60px;}
 section {display: -webkit-flex;}
 aside{height: 400px; width: 300px; object-fit: fill;}
