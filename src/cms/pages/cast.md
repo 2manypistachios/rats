@@ -25,7 +25,8 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 ### By Act
 > [Act 1](#act-1)
 
-## Act 1
+Act 1
+------
 
 <div> <!--hazelle-->
 </head>
@@ -45,6 +46,8 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </body>
 </div>
 
+---
+
 <div> <!--aurabus-->
 </head>
 <body>
@@ -63,6 +66,8 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </body>
 </div>
 
+---
+
 <div> <!--aullin-->
 </head>
 <body>
@@ -80,6 +85,8 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </section>
 </body>
 </div>
+
+---
 
 <div> <!--custodi-->
 </head>
