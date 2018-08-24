@@ -12,7 +12,6 @@ tags:
 * {box-sizing: border-box;}
 header {text-align: left; font-size: 14px; color: black;}
 section {display: -webkit-flex; display: flex;}
-aside {img: {display: block; width: 100%; height:auto;}}
 article {background-color: #eee; padding: 5px; font-size: 18px;}
 </style>
 </div>
@@ -44,7 +43,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </section>
 </body>
 </div>
-<img src="http://www.tots.cc/images/500blank.png" height=20 width=0>
+<img src="/images/500blank.png" height=20 width=0>
 <div> <!--aurabus-->
 </head>
 <body>
@@ -62,7 +61,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </section>
 </body>
 </div>
-<img src="http://www.tots.cc/images/500blank.png" height=20 width=0>
+<img src="/images/500blank.png" height=20 width=0>
 <div> <!--aullin-->
 </head>
 <body>
@@ -80,7 +79,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </section>
 </body>
 </div>
-<img src="http://www.tots.cc/images/500blank.png" height=20 width=0>
+<img src="/images/500blank.png" height=20 width=0>
 <div> <!--custodi-->
 </head>
 <body>
