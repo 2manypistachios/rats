@@ -7,17 +7,6 @@ tags:
   - Cast
   - test
 ---
-<div> <!--establishing character box style-->
-<style>
-* {box-sizing: border-box;}
-header {text-align: left; font-size: 14px; color: black;}
-section {display: -webkit-flex; display: flex;}
-aside {padding: 0;}
-article {background-color: #eee; padding: 5px; font-size: 18px;}
-@media (max-width: 600px) {section {-webkit-flex-direction: column; flex-direction: column;}}
-</style>
-</div>
-
 # The Cast
 
 ##### \*This list updates regularly when a new character is introduced
@@ -28,6 +17,16 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 ## Act 1
 
 <div> <!--act 1 list-->
+<div> <!--establishing character box style-->
+<style>
+* {box-sizing: border-box;}
+header {text-align: left; font-size: 14px; color: black;}
+section {display: -webkit-flex; display: flex;}
+aside {padding: 0;}
+article {background-color: #eee; padding: 5px; font-size: 18px;}
+@media (max-width: 600px) {section {-webkit-flex-direction: column; flex-direction: column;}}
+</style>
+</div>
 <div> <!--hazelle-->
 </head>
 <body>
