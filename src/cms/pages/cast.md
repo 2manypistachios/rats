@@ -12,7 +12,7 @@ tags:
 * {box-sizing: border-box;}
 img {height: 400px; width: 300px;}
 header {text-align: left; font-size: 14px; color: black;}
-section {display: -webkit-flex; display: flex;}
+section {display: -webkit-flex; height: 400px; width: 800px; }
 aside{height: 400px; width: 300px; object-fit: fill;}
 article {background-color: #eee; padding: 5px; font-size: 18px;}
 </style>
