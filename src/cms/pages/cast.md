@@ -7,16 +7,6 @@ tags:
   - Cast
   - test
 ---
-# The Cast
-
-##### \*This list updates regularly when a new character is introduced
-
-### By Act
-> [Act 1](#act-1)
-
-## Act 1
-
-<div> <!--act 1 list-->
 <div> <!--establishing character box style-->
 <style>
 * {box-sizing: border-box;}
@@ -27,6 +17,17 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 @media (max-width: 600px) {section {-webkit-flex-direction: column; flex-direction: column;}}
 </style>
 </div>
+
+# The Cast
+
+##### \*This list updates regularly when a new character is introduced
+
+### By Act
+> [Act 1](#act-1)
+
+## Act 1
+
+<div> <!--act 1 list-->
 <div> <!--hazelle-->
 </head>
 <body>
@@ -44,6 +45,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </section>
 </body>
 </div>
+<img src="http://www.tots.cc/images/500blank.png" height=20 width=0>
 <div> <!--aurabus-->
 </head>
 <body>
@@ -61,6 +63,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </section>
 </body>
 </div>
+<img src="http://www.tots.cc/images/500blank.png" height=20 width=0>
 <div> <!--aullin-->
 </head>
 <body>
@@ -78,6 +81,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </section>
 </body>
 </div>
+<img src="http://www.tots.cc/images/500blank.png" height=20 width=0>
 <div> <!--custodi-->
 </head>
 <body>
