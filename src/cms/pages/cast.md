@@ -36,7 +36,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </header>
 <section>
 <aside>
-<img src="/images/haz.png" width="300">
+<img src="/images/haz.png" width=300>
 </aside>
 <article>
 <p>Only child of Lady and Lord Salthis, Hazelle is curious to a fault, and infatuated with mysteries.</p>
@@ -54,7 +54,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </header>
 <section>
 <aside>
-<img src="/images/aur.png" width="300">
+<img src="/images/aur.png" width=300>
 </aside>
 <article>
 <p> Residing Lady over Greygarden, She is a pious woman who places power above all else, and Hazelle above power. </p>
@@ -72,7 +72,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </header>
 <section>
 <aside>
-<img src="/images/aul.png" width="300">
+<img src="/images/aul.png" width=300>
 </aside>
 <article>
 <p>Presiding minister of the keep’s cathedrial and court physician, Aullin leads a very private life among his studies and his apprentice.</p>
@@ -90,7 +90,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </header>
 <section>
 <aside>
-<img src="/images/cus.png" width="300">
+<img src="/images/cus.png" width=300>
 </aside>
 <article>
 <p>Apprentice and adopted son of Aullin, this young man exists.</p>
