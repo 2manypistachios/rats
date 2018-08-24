@@ -35,7 +35,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </header>
 <section>
 <aside>
-<img src="/images/haz-a1.png" width="250">
+<img src="/images/haz-a1.png" width=250 height=auto>
 </aside>
 <article>
 <p>Only child of Lady and Lord Salthis, Hazelle is curious to a fault, and infatuated with mysteries.</p>
@@ -44,7 +44,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </section>
 </body>
 </div>
-<img src="/images/500blank.png" height=20>
+<img src="/images/500blank.png" height=20 width=0>
 <div> <!--aurabus-->
 </head>
 <body>
@@ -53,7 +53,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </header>
 <section>
 <aside>
-<img src="/images/aur-a1.png" width="250">
+<img src="/images/aur-a1.png" width=250 height=auto>
 </aside>
 <article>
 <p> Residing Lady over Greygarden, She is a pious woman who places power above all else, and Hazelle above power. </p>
@@ -62,7 +62,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </section>
 </body>
 </div>
-<img src="/images/500blank.png" height=20>
+<img src="/images/500blank.png" height=20 width=0>
 <div> <!--aullin-->
 </head>
 <body>
@@ -71,7 +71,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </header>
 <section>
 <aside>
-<img src="/images/aul-a1.png" width="250">
+<img src="/images/aul-a1.png" width=250 height=auto>
 </aside>
 <article>
 <p>Presiding minister of the keep’s cathedrial and court physician, Aullin leads a very private life among his studies and his apprentice.</p>
@@ -80,7 +80,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </section>
 </body>
 </div>
-<img src="/images/500blank.png" height=20>
+<img src="/images/500blank.png" height=20 width=0>
 <div> <!--custodi-->
 </head>
 <body>
@@ -89,7 +89,7 @@ article {background-color: #eee; padding: 5px; font-size: 18px;}
 </header>
 <section>
 <aside>
-<img src="/images/cus-a1.png" width="250">
+<img src="/images/cus-a1.png" width=250 height=auto>
 </aside>
 <article>
 <p>Apprentice and adopted son of Aullin, this young man exists.</p>
