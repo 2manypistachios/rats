@@ -12,7 +12,7 @@ tags:
 * {box-sizing: border-box;}
 header {text-align: left; font-size: 14px; color: black;}
 section {display: -webkit-flex; display: flex;}
-aside {img: {max-width: 300px; height: auto;}}
+aside {img: {display: block; width: 100%; height:auto;}}
 article {background-color: #eee; padding: 5px; font-size: 18px;}
 </style>
 </div>
