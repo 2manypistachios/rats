@@ -10,9 +10,10 @@ tags:
 <div> <!--establishing character box style-->
 <style>
 * {box-sizing: border-box;}
+img {}
 header {text-align: left; font-size: 14px; color: black;}
 section {display: -webkit-flex; display: flex;}
-aside{height: 400px; width: 300px;}
+aside{height: 400px; width: 300px; object-fit: fill;}
 article {background-color: #eee; padding: 5px; font-size: 18px;}
 </style>
 </div>
