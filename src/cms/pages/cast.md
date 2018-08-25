@@ -11,6 +11,7 @@ tags:
 <style>
 * {box-sizing: border-box;}
 section {display: -webkit-flex; display: flex;}
+aside {background-color: #eee;}
 article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding: 5px; font-size: 22px;}
 @media (max-width: 600px) {section {-webkit-flex-direction: column; flex-direction: column;}}
 </style>
