@@ -7,6 +7,9 @@ tags:
   - test
   - About
 ---
+# Schedule 
+We update the comic every Saturday, in the afternoon. We will add 5 new pages with every update. For now that is our schedule, we may change it as time goes on, but for now that is it.
+
 # About the World
 
-there are things to know, but for now you get nothing, for now... (sorry)
+There is much to learn, but none to teach it just yet...
