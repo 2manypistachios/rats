@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Card, CardHeader, CardHeaderTitle, CardContent, Title, Subtitle } from "bloomer";
-import { Link } from "gatsby";
 const _ = require("lodash");
 
 class TumblrBlog extends Component {
@@ -10,7 +9,7 @@ class TumblrBlog extends Component {
         console.log(postEdge);
         let options = { weekday: 'long', month: 'long', day: 'numeric' };
         let counter=0;
-        if (_.findIndex(postEdge.node.tags, "nau") && counter <= 3) {
+        if (_.includes(postEdge.node.tags, "nau")>0 && counter <= 3) {
             counter++;
             updates.push({
                 title: postEdge.node.title,
@@ -20,7 +19,9 @@ class TumblrBlog extends Component {
                 post_url: postEdge.node.post_url
             });
         }
+        console.log("updates", updates);
       });
+
     return (
     <Card>
         <CardHeader>

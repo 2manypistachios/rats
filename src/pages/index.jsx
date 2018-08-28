@@ -11,7 +11,7 @@ import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import config from "../../data/SiteConfig";
 import Link from "gatsby-link";
 
-import { Section, Columns, Column, Hero, HeroBody, Level, LevelItem } from "bloomer";
+import { Section, Columns, Column, Level, LevelItem } from "bloomer";
 import { Card, CardContent, Title, Button } from "bloomer";
 
 class IndexPage extends React.Component {
