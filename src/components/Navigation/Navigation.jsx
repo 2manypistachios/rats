@@ -30,15 +30,14 @@ class Navigation extends Component {
                     </NavbarBrand>
                     <NavbarMenu isActive={this.state.isActive} onClick={this.onClickNav}>
                         <NavbarStart>
-                            <NavbarItem href='/'>Home</NavbarItem>
                             <NavbarItem hasDropdown isHoverable>
                                 <NavbarLink href='/'>Pages</NavbarLink>
                                 <NavbarDropdown>
-                                    <NavbarItem href='/cast/'>Cast</NavbarItem>
-                                    <NavbarItem href='/archive/'>Archive</NavbarItem>
+                                    <Link to="/cast"><NavbarItem href='/cast/'>Cast</NavbarItem></Link>
+                                    <Link to="/archive"><NavbarItem href='/archive/'>Archive</NavbarItem></Link>
                                     <NavbarDivider />
-                                    <NavbarItem href='/about/'>About</NavbarItem>
-                                    <NavbarItem href='/credits/'>Credits</NavbarItem>
+                                    <Link to="/about"><NavbarItem href='/cast/'>About</NavbarItem></Link>
+                                    <Link to="/credits"><NavbarItem href='/credits/'>Credits</NavbarItem></Link>
                                 </NavbarDropdown>
                             </NavbarItem>
                         </NavbarStart>
