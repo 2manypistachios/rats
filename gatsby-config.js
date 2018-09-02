@@ -185,6 +185,7 @@ module.exports = {
         ]
       }
     },
+    'gatsby-plugin-remove-serviceworker',
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {

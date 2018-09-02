@@ -33,16 +33,16 @@ class Navigation extends Component {
                             <NavbarItem hasDropdown isHoverable>
                                 <NavbarLink href='/'>Pages</NavbarLink>
                                 <NavbarDropdown>
-                                    <Link to="/cast"><NavbarItem href='/cast/'>Cast</NavbarItem></Link>
-                                    <Link to="/archive"><NavbarItem href='/archive/'>Archive</NavbarItem></Link>
+                                    <Link to="/cast"><NavbarItem>Cast</NavbarItem></Link>
+                                    <Link to="/archive"><NavbarItem>Archive</NavbarItem></Link>
                                     <NavbarDivider />
-                                    <Link to="/about"><NavbarItem href='/cast/'>About</NavbarItem></Link>
-                                    <Link to="/credits"><NavbarItem href='/credits/'>Credits</NavbarItem></Link>
+                                    <Link to="/about"><NavbarItem>About</NavbarItem></Link>
+                                    <Link to="/credits"><NavbarItem>Credits</NavbarItem></Link>
                                 </NavbarDropdown>
                             </NavbarItem>
                         </NavbarStart>
                     </NavbarMenu>
-                    </Navbar>
+                </Navbar>
             </ErrorBoundary>
         );
     }
