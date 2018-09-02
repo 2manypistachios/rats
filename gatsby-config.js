@@ -29,6 +29,7 @@ module.exports = {
     }
   },
   plugins: [
+    "gatsby-plugin-remove-serviceworker",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
     { //*****    GATSBY-SOURCE-FILESYSTEM  STATIC    *****/
@@ -185,7 +186,6 @@ module.exports = {
         ]
       }
     },
-    'gatsby-plugin-remove-serviceworker',
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
