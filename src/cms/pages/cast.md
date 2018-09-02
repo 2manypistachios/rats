@@ -7,15 +7,7 @@ tags:
   - Cast
   - test
 ---
-<div>
-<style>
-* {box-sizing: border-box;}
-section {display: -webkit-flex; display: flex;}
-aside {background-color: #eee;}
-article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding: 5px; font-size: 22px;}
-@media (max-width: 600px) {section {-webkit-flex-direction: column; flex-direction: column;}}
-</style>
-</div>
+
 
 # The Cast
 
@@ -29,7 +21,8 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 ---
 ### Hazelle Salphomer Salthis
 
-<div> <!--hazelle-->
+<div>
+ <!--hazelle-->
 <body>
 <section>
 <aside>
@@ -46,14 +39,16 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 ---
 ### Aurabus Vellenian Salthis
 
-<div> <!--aurabus-->
+<div>
+ <!--aurabus-->
 <body>
 <section>
 <aside>
 <img src="/images/aur-a1.png">
 </aside>
 <article>
-<p> Residing Lady over Greygarden, She is a pious woman who places power above all else, and Hazelle above power. </p>
+<p> Residing Lady over Greygarden, She is a pious woman who places power above all else, and Hazelle above power.
+ </p>
 <p>Age: 44</p>
 </article>
 </section>
@@ -63,7 +58,8 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 ---
 ### Aullin Deshda
 
-<div> <!--aullin-->
+<div>
+ <!--aullin-->
 <body>
 <section>
 <aside>
@@ -80,7 +76,8 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 ---
 ### Custodi Ahn
 
-<div> <!--custodi-->
+<div>
+ <!--custodi-->
 <body>
 <section>
 <aside>
