@@ -36,7 +36,7 @@
     "gatsby-transformer-sharp": "next",
     "lodash": "^4.17.4",
     "moment": "^2.22.2",
-    "netlify-cms": "^1.9.3",
+    "netlify-cms": "^2.1.1",
     "node-sass": "^4.9.3",
     "prismjs": "^1.15.0",
     "react": "^16.4.1",
