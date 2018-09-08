@@ -1,22 +1,52 @@
-backend:
   name: git-gateway
   branch: master
-
-media_folder: static/images
-
-collections:
+  media_folder: "static/images/"
+  public_folder: "/images"
+ collections:
   - name: "comic"
     label: "Comic"
-    folder: "src/cms/comic"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "comic"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Page", name: "page", widget: "number", valueType: "int", min: "1", max: "9999"}
-      - {label: "Cover", name: "cover", widget: "image"}
-      - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
+     folder: "src/cms/comic"
+     create: true
+     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+     fields:
+       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "comic"}
+       - {label: "Title", name: "title", widget: "string"}
+       - {label: "Page", name: "page", widget: "number", valueType: "int", min: "1", max: "9999"}
+       - {label: "Cover", name: "cover", widget: "image"}
+       - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
- 
+   - name: "pages"
+    label: "Pages"
+    create: false
+    files:
+      - file: "src/cms/pages/about.md"
+        label: "About"
+        name: "about"
+        fields:
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Cover", name: "cover", widget: "image"}
+        - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
+        - {label: "Body", name: "body", widget: "markdown"}
+        - {label: "Tags", name: "tags", widget: "list"}
+      - file: "src/cms/pages/cast.md"
+        label: "Cast"
+        name: "cast"
+        fields:
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "cast"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Cover", name: "cover", widget: "image"}
+        - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
+        - {label: "Body", name: "body", widget: "markdown"}
+        - {label: "Tags", name: "tags", widget: "list"}
+      - file: "src/cms/pages/credits.md"
+        label: "Credits"
+        name: "credits"
+        fields:
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "credits"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Cover", name: "cover", widget: "image"}
+        - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
+        - {label: "Body", name: "body", widget: "markdown"}
+        - {label: "Tags", name: "tags", widget: "list"} 
