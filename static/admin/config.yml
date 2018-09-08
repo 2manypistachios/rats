@@ -1,22 +1,26 @@
+backend:
   name: git-gateway
   branch: master
-  media_folder: "static/images/"
-  public_folder: "/images"
- collections:
+
+media_folder: "static/images/"
+public_folder: "/images"
+
+collections:
   - name: "comic"
     label: "Comic"
-     folder: "src/cms/comic"
-     create: true
-     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-     fields:
-       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "comic"}
-       - {label: "Title", name: "title", widget: "string"}
-       - {label: "Page", name: "page", widget: "number", valueType: "int", min: "1", max: "9999"}
-       - {label: "Cover", name: "cover", widget: "image"}
-       - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
+    folder: "src/cms/comic"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "comic"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Page", name: "page", widget: "number", valueType: "int", min: "1", max: "9999"}
+      - {label: "Cover", name: "cover", widget: "image"}
+      - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-   - name: "pages"
+
+  - name: "pages"
     label: "Pages"
     create: false
     files:
@@ -49,4 +53,4 @@
         - {label: "Cover", name: "cover", widget: "image"}
         - {label: "Publish Date", name: "date", widget: "date", format: "DD/MM/YYYY"}
         - {label: "Body", name: "body", widget: "markdown"}
-        - {label: "Tags", name: "tags", widget: "list"} 
+        - {label: "Tags", name: "tags", widget: "list"}
