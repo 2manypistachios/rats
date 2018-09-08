@@ -1,6 +1,6 @@
 import CMS from 'netlify-cms'
 
-CMS.registerPreviewStyle('/styles.css')
+//CMS.registerPreviewStyle('/styles.css')
 console.log("REGISTERING STYLESl ",'/styles.css');
 
 var CategoriesControl = createClass({
