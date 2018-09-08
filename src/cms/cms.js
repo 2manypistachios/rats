@@ -26,4 +26,4 @@ var CategoriesControl = createClass({
     }
   });
   
-CMS.registerWidget('categories', CategoriesControl, CategoriesPreview);
+//CMS.registerWidget('categories', CategoriesControl, CategoriesPreview);
