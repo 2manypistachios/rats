@@ -7,5 +7,4 @@ date: 25/08/2018
 tags:
   - Chapter 1
 ---
-![](/images/0002.png)
-
+![null](/images/0002.png)
