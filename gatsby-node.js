@@ -157,10 +157,6 @@ exports.createPages = ({ graphql, actions }) => {
             });
           }
 
-          /*if (edge.node.frontmatter.category) {
-            categorySet.add(edge.node.frontmatter.category);
-          }*/
-
           createPage({
             path: edge.node.fields.slug,
             component: postPage,
@@ -180,17 +176,6 @@ exports.createPages = ({ graphql, actions }) => {
             }
           });
         });
-
-        /*const categoryList = Array.from(categorySet);
-        categoryList.forEach(category => {
-          createPage({
-            path: `/categories/${_.kebabCase(category)}/`,
-            component: categoryPage,
-            context: {
-              category
-            }
-          });
-        });*/
       })
     );
   });

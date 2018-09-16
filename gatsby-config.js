@@ -193,7 +193,6 @@ module.exports = {
         enableIdentityWidget: true,
       },
     },
-    "gatsby-plugin-offline",
     'gatsby-plugin-netlify'
   ]
 };
