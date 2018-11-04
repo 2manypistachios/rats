@@ -7,18 +7,28 @@ tags:
   - Cast
   - test
 ---
-
+<div>
+<style>
+\* {box-sizing: border-box;}
+section {display: -webkit-flex; display: flex;}
+aside {padding: 0;}
+article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding: 5px; font-size: 22px;}
+@media (max-width: 600px) {section {-webkit-flex-direction: column; flex-direction: column;}}
+</style>
+</div>
 
 # The Cast
 
 ##### \*This list updates regularly when a new character is introduced
 
 ### By Act
+
 > [Act 1](#act-1)
 
 ## Act 1
 
 ---
+
 ### Hazelle Salphomer Salthis
 
 <div>
@@ -37,6 +47,7 @@ tags:
 </div>
 
 ---
+
 ### Aurabus Vellenian Salthis
 
 <div>
@@ -56,6 +67,26 @@ tags:
 </div>
 
 ---
+
+### Decrinn Salthis
+
+<div>
+ <!--decrinn-->
+<body>
+<section>
+<aside>
+<img src="/images/dec-a1.png">
+</aside>
+<article>
+<p>Husband of Aurabus, and father of Hazelle, Decrinn is the ruling lord over Greygarden, whether he wants to or not.</p>
+<p>Age: 47</p>
+</article>
+</section>
+</body>
+</div>
+
+---
+
 ### Aullin Deshda
 
 <div>
@@ -74,6 +105,7 @@ tags:
 </div>
 
 ---
+
 ### Custodi Ahn
 
 <div>
@@ -86,6 +118,25 @@ tags:
 <article>
 <p>Apprentice and adopted son of Aullin, this young man exists.</p>
 <p>Age: 16</p>
+</article>
+</section>
+</body>
+</div>
+
+---
+
+### Cimn Menimyst
+
+<div>
+ <!--Cimn-->
+<body>
+<section>
+<aside>
+<img src="/images/cimn-a1.png">
+</aside>
+<article>
+<p>The dreaded Monster King, the scourge of the world, bent on destroying it along with all of those who inhabit it.</p>
+<p>Age: ??</p>
 </article>
 </section>
 </body>
