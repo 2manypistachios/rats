@@ -125,7 +125,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 
 ---
 
-### Cimn Menimyst
+### Qimn Menimyst
 
 <div>
  <!--Cimn-->
