@@ -1,6 +1,6 @@
 ---
 templateKey: comic
-title: Chapter 4 | Page 3
+title: Page 3 | Chapter 4
 page: 72
 cover: /images/blank.png
 date: 13/01/2019
