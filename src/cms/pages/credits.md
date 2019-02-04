@@ -7,7 +7,7 @@ tags:
   - test
   - Credits
 ---
-<div>
+<div>
 <style>
 \* {box-sizing: border-box;}
 section {display: -webkit-flex; display: flex;}
@@ -18,7 +18,9 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </div>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130113809-1"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -28,8 +30,9 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 
 # The Creators
 
----
-### Oz 
+- - -
+
+### Oz
 
 <div>
 <body>
@@ -39,13 +42,13 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </aside>
 <article>
 <p>Main artist, Author</p>
-<p>Tumblr - <a href="http://siromany.tumblr.com/">Siromany</a></p>
 </article>
 </section>
 </body>
 </div>
 
----
+- - -
+
 ### Matte
 
 <div>
@@ -62,7 +65,8 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </body>
 </div>
 
----
+- - -
+
 ### Maxum
 
 <div>
