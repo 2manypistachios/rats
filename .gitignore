@@ -60,3 +60,4 @@ public/
 
 # Bundle stats
 bundle-stats.json
+package-lock.json
