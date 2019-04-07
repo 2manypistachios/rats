@@ -29,7 +29,6 @@ module.exports = {
     }
   },
   plugins: [
-    "gatsby-plugin-remove-serviceworker",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
     { //*****    GATSBY-SOURCE-FILESYSTEM  STATIC    *****/
