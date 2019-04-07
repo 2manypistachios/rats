@@ -36,7 +36,7 @@ function addSiblingNodes(createNodeField) {
     const nextNode = postNodes[nextID];
     const prevNode = postNodes[prevID];
 
-    console.log("HEEEEEEEEEEEEEEEEEEEEEEY");
+    console.log("-------------------------------------------");
     console.log("Previous Node",prevNode.frontmatter.title);
     console.log("Current Node",currNode.frontmatter.title);
     console.log("Next Node",nextNode.frontmatter.title);
