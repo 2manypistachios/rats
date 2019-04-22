@@ -7,4 +7,4 @@ date: 22/04/2019
 tags:
   - Chapter 5
 ---
-![](/images/0098-5-5.png)
+![null](/images/0098b.png)
