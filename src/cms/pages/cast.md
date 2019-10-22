@@ -18,7 +18,9 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </div>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130113809-1"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -36,7 +38,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 
 ## Act 1
 
----
+- - -
 
 ### Hazelle Salphomer Salthis
 
@@ -55,7 +57,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </body>
 </div>
 
----
+- - -
 
 ### Aurabus Vellenian Salthis
 
@@ -75,7 +77,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </body>
 </div>
 
----
+- - -
 
 ### Decrinn Salthis
 
@@ -94,7 +96,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </body>
 </div>
 
----
+- - -
 
 ### Aullin Deshda
 
@@ -113,7 +115,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </body>
 </div>
 
----
+- - -
 
 ### Custodi Ahn
 
@@ -132,12 +134,12 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </body>
 </div>
 
----
+- - -
 
 ### Qimn Menimyst
 
 <div>
- <!--Cimn-->
+ <!--Qimn-->
 <body>
 <section>
 <aside>
