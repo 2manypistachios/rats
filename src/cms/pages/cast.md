@@ -47,7 +47,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 <body>
 <section>
 <aside>
-<img src="/images/haz-a1.png">
+<img src="/images/a1-haz.png">
 </aside>
 <article>
 <p>Only child of Lady and Lord Salthis, Hazelle is curious to a fault, and infatuated with mysteries.</p>
@@ -66,10 +66,10 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 <body>
 <section>
 <aside>
-<img src="/images/aur-a1.png">
+<img src="/images/a1-aura.png">
 </aside>
 <article>
-<p> Residing Lady over Greygarden, She is a pious woman who places power above all else, and Hazelle above power.
+<p> Residing Lady over Greygarden, She is a pious woman who places power above all else, and her son above power.
  </p>
 <p>Age: 44</p>
 </article>
@@ -86,7 +86,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 <body>
 <section>
 <aside>
-<img src="/images/dec-a1.png">
+<img src="/images/a1-dec.png">
 </aside>
 <article>
 <p>Husband of Aurabus, and father of Hazelle, Decrinn is the ruling lord over Greygarden, whether he wants to or not.</p>
@@ -105,7 +105,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 <body>
 <section>
 <aside>
-<img src="/images/aul-a1.png">
+<img src="/images/a1-al.png">
 </aside>
 <article>
 <p>Presiding minister of the keep’s cathedrial and court physician, Aullin leads a very private life among his studies and his apprentice.</p>
@@ -124,7 +124,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 <body>
 <section>
 <aside>
-<img src="/images/cus-a1.png">
+<img src="/images/a1-cus.png">
 </aside>
 <article>
 <p>Apprentice and adopted son of Aullin, this young man exists.</p>
@@ -143,7 +143,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 <body>
 <section>
 <aside>
-<img src="/images/cimn-a1.png">
+<img src="/images/a1-qim.png">
 </aside>
 <article>
 <p>The dreaded Monster King, the scourge of the world, bent on destroying it along with all of those who inhabit it.</p>
