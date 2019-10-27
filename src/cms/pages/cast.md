@@ -156,24 +156,6 @@ gtag('config', 'UA-130113809-1');
 
 - - -
 
-### Michar Erman
-<div>
-<!--michar-->
-<body>
-<section>
-<aside>
-<img src="/images/a1-michar.png">
-</aside>
-<article>
-<p>Captain of the Greyguard, once a trusted individual in the affairs of monster attacks, but his scarred past and paranoid nature has reduced the gravity of his warnings.</p>
-<p>Age: 41</p>
-</article>
-</section>
-</body>
-</div>
-
-- - -
-
 ### Vishian Krace
 <div>
 <!--vishian-->
@@ -185,6 +167,24 @@ gtag('config', 'UA-130113809-1');
 <article>
 <p>Quartermaster, overseeing stock counts and supplies, she watches over trade routes and dealings that come in and out of Greygarden. Rescued from the swamps of Cantramora by the church, this orphan worked her way up into a position of importance within the keep. </p>
 <p>Age: 32</p>
+</article>
+</section>
+</body>
+</div>
+
+- - -
+
+### Michar Erman
+<div>
+<!--michar-->
+<body>
+<section>
+<aside>
+<img src="/images/a1-michar.png">
+</aside>
+<article>
+<p>Captain of the Greyguard, once a trusted individual in the affairs of monster attacks, but his scarred past and paranoid nature has reduced the gravity of his warnings.</p>
+<p>Age: 41</p>
 </article>
 </section>
 </body>
