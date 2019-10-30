@@ -38,7 +38,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 <body>
 <section>
 <aside>
-<img src="/images/oz.png">
+<img src="/images/oz-2-m.png">
 </aside>
 <article>
 <p>Main artist, Author</p>
@@ -55,7 +55,7 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 <body>
 <section>
 <aside>
-<img src="/images/ma.png">
+<img src="/images/ma-2-m.png">
 </aside>
 <article>
 <p>Editor, Co-writer</p>
