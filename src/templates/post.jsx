@@ -44,7 +44,7 @@ export default class PostTemplate extends React.Component {
           <div className="post-meta">
             <PostTags tags={post.tags} />
           </div>
-          <Disqus postNode={postNode} />
+          {/*<Disqus postNode={postNode} />*/}
         </Section>
       </Layout>
     );
