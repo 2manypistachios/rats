@@ -18,7 +18,9 @@ article {-webkit-flex: 3; -ms-flex: 3; flex: 3; background-color: #eee; padding:
 </div>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130113809-1"></script>
+
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -31,6 +33,7 @@ gtag('config', 'UA-130113809-1');
 - - -
 
 ### Hazelle Salphomer Salthis
+
 <div>
 <!--hazelle-->
 <body>
@@ -49,6 +52,7 @@ gtag('config', 'UA-130113809-1');
 - - -
 
 ### Aurabus Vellenian Salthis
+
 <div>
 <!--aurabus-->
 <body>
@@ -67,6 +71,7 @@ gtag('config', 'UA-130113809-1');
 - - -
 
 ### Decrinn Salthis
+
 <div>
 <!--decrinn-->
 <body>
@@ -85,6 +90,7 @@ gtag('config', 'UA-130113809-1');
 - - -
 
 ### Gemini Fonz
+
 <div>
 <!--gemini-->
 <body>
@@ -103,6 +109,7 @@ gtag('config', 'UA-130113809-1');
 - - -
 
 ### Hidge Enawa
+
 <div>
 <!--hidge-->
 <body>
@@ -120,7 +127,8 @@ gtag('config', 'UA-130113809-1');
 
 - - -
 
-### Berrand Larcais
+### Berand Larcais
+
 <div>
 <!--berand-->
 <body>
@@ -139,6 +147,7 @@ gtag('config', 'UA-130113809-1');
 - - -
 
 ### Jude Menath
+
 <div>
 <!--jude-->
 <body>
@@ -157,6 +166,7 @@ gtag('config', 'UA-130113809-1');
 - - -
 
 ### Vishian Krace
+
 <div>
 <!--vishian-->
 <body>
@@ -175,6 +185,7 @@ gtag('config', 'UA-130113809-1');
 - - -
 
 ### Michar Erman
+
 <div>
 <!--michar-->
 <body>
@@ -193,6 +204,7 @@ gtag('config', 'UA-130113809-1');
 - - -
 
 ### Sir Stellion Faust
+
 <div>
 <!--stellion-->
 <body>
@@ -211,6 +223,7 @@ gtag('config', 'UA-130113809-1');
 - - -
 
 ### Aullin Deshda
+
 <div>
 <!--aullin-->
 <body>
@@ -229,6 +242,7 @@ gtag('config', 'UA-130113809-1');
 - - -
 
 ### Custodi Ahn
+
 <div>
 <!--custodi-->
 <body>
@@ -247,6 +261,7 @@ gtag('config', 'UA-130113809-1');
 - - -
 
 ### Qimn Menimyst
+
 <div>
 <!--Qimn-->
 <body>
@@ -261,4 +276,3 @@ gtag('config', 'UA-130113809-1');
 </section>
 </body>
 </div>
-
