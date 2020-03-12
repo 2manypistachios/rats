@@ -9,8 +9,8 @@ tags:
 ---
 # Schedule
 
-We update the comic every weekend, generally Saturday evenings. We will add 5 new pages with every update. For now that is our schedule, we may change it as time goes on.
+We currently update infrequently, but may get back on a consistent schedule soon.
 
-# About the World
+# About the Story
 
-There is much to learn, the lesson begins soon...
+Tale of the Serpent, a fantasy, tragedy, medieval murder mystery series about Hazelle Salthis, the lord’s son and his cousin, Sir Gemini Fonz. The two are thrust into the world of politics and the ever looming threat of the Monster King. Handling the collapse of their society, these two begin to uncover a myriad of secrets concealed by those they have once trusted.
